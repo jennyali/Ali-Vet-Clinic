@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.scss","styles.scss"],"names":[],"mappings":"AAAA;EACI,sBAAsB,EACzB;;ACAD;EACI,yBAAyB,EAC5B","file":"styles.css","sourcesContent":["div {\n    background-color: red;\n}","@import \"test\";\n\nbody {\n    background-color: orange;\n}"],"sourceRoot":"/source/"}
