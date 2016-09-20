@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"styles.css","sourceRoot":"/source/","sourcesContent":[]}
+{"version":3,"sources":["img-resize.scss"],"names":[],"mappings":"AAAA;EACI,WAAW;EACX,YAAY,EACf","file":"styles.css","sourcesContent":["img {\n    width: 20%;\n    height: 20%;\n}"],"sourceRoot":"/source/"}
