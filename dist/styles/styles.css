@@ -2,4 +2,72 @@ img {
   width: 20%;
   height: 20%; }
 
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 12px;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07);
+  font-family: 'Raleway', sans-serif; }
+
+.phone-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #e7e7e7; }
+  .phone-block .phone-box {
+    width: 1000px; }
+    .phone-block .phone-box p {
+      text-align: right;
+      padding: 10px 25px 10px 0px;
+      color: lightseagreen;
+      margin: 0px;
+      font-weight: bold; }
+
+.nav-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .nav-block nav {
+    width: 1000px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px; }
+
+.logo-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px;
+  font-size: 24px;
+  color: darkgrey; }
+  .logo-container img {
+    padding: 10px 0px 10px 0px;
+    width: 130px;
+    height: 120px; }
+  .logo-container span {
+    font-weight: bolder;
+    color: black; }
+
+.navbar {
+  list-style: none; }
+  .navbar li {
+    display: inline-block;
+    margin-right: 25px; }
+
+body {
+  margin: 0px; }
+
 /*# sourceMappingURL=styles.css.map */
