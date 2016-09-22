@@ -2,14 +2,20 @@ img {
   width: 20%;
   height: 20%; }
 
+.header-shadow, header {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+
+.center-width, .phone-block .phone-box, .nav-block nav {
+  width: 1000px; }
+
 header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-size: 12px;
-  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07);
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 12px; }
 
 .phone-block {
   display: -ms-flexbox;
@@ -17,14 +23,12 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #e7e7e7; }
-  .phone-block .phone-box {
-    width: 1000px; }
-    .phone-block .phone-box p {
-      text-align: right;
-      padding: 10px 25px 10px 0px;
-      color: lightseagreen;
-      margin: 0px;
-      font-weight: bold; }
+  .phone-block .phone-box p {
+    color: lightseagreen;
+    font-weight: bold;
+    padding: 10px 25px 10px 0px;
+    margin: 0px;
+    text-align: right; }
 
 .nav-block {
   display: -ms-flexbox;
@@ -32,40 +36,45 @@ header {
   -ms-flex-pack: center;
   justify-content: center; }
   .nav-block nav {
-    width: 1000px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding: 10px 10px 10px 10px;
     -ms-flex-align: center;
-    align-items: center;
-    padding: 10px 10px 10px 10px; }
+    align-items: center; }
 
 .logo-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
+  color: darkgrey;
+  font-size: 24px;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0px;
-  font-size: 24px;
-  color: darkgrey; }
+  margin: 0px; }
   .logo-container img {
     padding: 10px 0px 10px 0px;
     width: 130px;
     height: 120px; }
   .logo-container span {
-    font-weight: bolder;
-    color: black; }
+    color: black;
+    font-weight: bolder; }
 
 .navbar {
   list-style: none; }
   .navbar li {
-    display: inline-block;
-    margin-right: 25px; }
+    margin: 0px 25px 0px 0px;
+    display: inline-block; }
+
+.header-shadow, header {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+
+.center-width, .phone-block .phone-box, .nav-block nav {
+  width: 1000px; }
 
 body {
   margin: 0px; }
