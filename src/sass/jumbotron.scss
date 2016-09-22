@@ -1,0 +1,58 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.jumbotron{
+    @include display-flex(flex, null, center);
+    @include font-style($primary-font-family, $text-primary-col, $medium-font, null);
+    position: relative;
+
+    .jumbo-text-container{
+        @extend .center-width;
+        position: relative;
+        z-index: 2;
+
+
+        .jumbo-text{
+            background-color: white;
+            width: 300px;
+
+            h1{
+                @include font-style( null, $text-primary-col, $Xlarge-font, normal);
+                line-height: 48px;
+
+                span{
+                    @include font-style( null, $text-primary-col, $Xlarge-font, bold);
+                }
+            }
+
+            p{
+                @include padding-and-margin( null, 40px 0px 40px 0px);
+                line-height: 24px;
+            }
+
+            button{
+                @include font-style( null, $text-secondary-col, $medium-font, null);
+                @include padding-and-margin( 10px 25px, null);
+                background-color: $primary-color;
+                border: none;
+            }
+        }
+    }
+}
+
+.jumbo-img-slides{
+    position: relative;
+    background-color: lightgrey;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    //z-index: 1;
+    align-self: flex-start;
+
+    img{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+
+    }
+}
