@@ -3,7 +3,7 @@
 $primary-color: lightseagreen;
 $light: lightgrey;
 $medium: darkgrey;
-$dark: grey;
+$dark: dimgrey;
 
 $text-primary-col: black;
 $text-secondary-col: white;
@@ -12,8 +12,9 @@ $text-secondary-col: white;
 // font styles
 
 $primary-font-family: 'Raleway', sans-serif;
+$secondary-font-family: 'Montserrat', sans-serif;
 
-$small-font: 12px;
+$small-font: 12.5px;
 $medium-font: 16px;
 $large-font: 24px;
 $Xlarge-font: 48px;
@@ -27,5 +28,5 @@ $Xlarge-font: 48px;
 }
 
 .center-width {
-    width: 1000px;
+    width: 980px;
 }
