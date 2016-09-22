@@ -5,7 +5,7 @@ img {
 .header-shadow, header {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
   width: 1000px; }
 
 header {
@@ -67,14 +67,67 @@ header {
 .navbar {
   list-style: none; }
   .navbar li {
-    margin: 0px 25px 0px 0px;
+    margin: 0px 30px 0px 0px;
     display: inline-block; }
 
 .header-shadow, header {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
   width: 1000px; }
+
+.header-shadow, header {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
+  width: 1000px; }
+
+.jumbotron {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 16px;
+  position: relative; }
+  .jumbotron .jumbo-text-container {
+    position: relative;
+    z-index: 2; }
+    .jumbotron .jumbo-text-container .jumbo-text {
+      background-color: white;
+      width: 300px; }
+      .jumbotron .jumbo-text-container .jumbo-text h1 {
+        color: black;
+        font-size: 48px;
+        font-weight: normal;
+        line-height: 48px; }
+        .jumbotron .jumbo-text-container .jumbo-text h1 span {
+          color: black;
+          font-size: 48px;
+          font-weight: bold; }
+      .jumbotron .jumbo-text-container .jumbo-text p {
+        margin: 40px 0px 40px 0px;
+        line-height: 24px; }
+      .jumbotron .jumbo-text-container .jumbo-text button {
+        color: white;
+        font-size: 16px;
+        padding: 10px 25px;
+        background-color: lightseagreen;
+        border: none; }
+
+.jumbo-img-slides {
+  position: relative;
+  background-color: lightgrey;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+  .jumbo-img-slides img {
+    width: 100%;
+    position: relative;
+    z-index: 1; }
 
 body {
   margin: 0px; }
