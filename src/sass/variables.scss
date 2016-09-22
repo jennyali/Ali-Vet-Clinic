@@ -4,12 +4,28 @@ $primary-color: lightseagreen;
 $light: lightgrey;
 $medium: darkgrey;
 $dark: grey;
-$text-primary: black;
-$text-secondary: white;
+
+$text-primary-col: black;
+$text-secondary-col: white;
 
 
 // font styles
 
+$primary-font-family: 'Raleway', sans-serif;
+
 $small-font: 12px;
 $medium-font: 16px;
 $large-font: 24px;
+
+
+//extend classes
+
+.header-shadow{
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.07);
+}
+
+.center-width {
+    width: 1000px;
+}
