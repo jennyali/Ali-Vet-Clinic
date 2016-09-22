@@ -5,7 +5,7 @@ img {
 .header-shadow, header {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, header .phone-block .phone-box, header .nav-block nav {
+.center-width, .phone-block .phone-box, .nav-block nav {
   width: 1000px; }
 
 header {
@@ -16,60 +16,64 @@ header {
   font-family: "Raleway", sans-serif;
   color: black;
   font-size: 12px; }
-  header .phone-block {
+
+.phone-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #e7e7e7; }
+  .phone-block .phone-box p {
+    color: lightseagreen;
+    font-weight: bold;
+    padding: 10px 25px 10px 0px;
+    margin: 0px;
+    text-align: right; }
+
+.nav-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .nav-block nav {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #e7e7e7; }
-    header .phone-block .phone-box p {
-      color: lightseagreen;
-      font-weight: bold;
-      padding: 10px 25px 10px 0px;
-      margin: 0px;
-      text-align: right; }
-  header .nav-block {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    header .nav-block nav {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      padding: 10px 10px 10px 10px;
-      -ms-flex-align: center;
-      align-items: center; }
-      header .nav-block nav .logo-container {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        color: darkgrey;
-        font-size: 24px;
-        -ms-flex-align: center;
-        align-items: center;
-        margin: 0px; }
-        header .nav-block nav .logo-container img {
-          padding: 10px 0px 10px 0px;
-          width: 130px;
-          height: 120px; }
-        header .nav-block nav .logo-container span {
-          color: black;
-          font-weight: bolder; }
-      header .nav-block nav .navbar {
-        list-style: none; }
-        header .nav-block nav .navbar li {
-          display: inline-block;
-          margin-right: 25px; }
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.logo-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: darkgrey;
+  font-size: 24px;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px; }
+  .logo-container img {
+    padding: 10px 0px 10px 0px;
+    width: 130px;
+    height: 120px; }
+  .logo-container span {
+    color: black;
+    font-weight: bolder; }
+
+.navbar {
+  list-style: none; }
+  .navbar li {
+    margin: 0px 25px 0px 0px;
+    display: inline-block; }
 
 .header-shadow, header {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, header .phone-block .phone-box, header .nav-block nav {
+.center-width, .phone-block .phone-box, .nav-block nav {
   width: 1000px; }
 
 body {

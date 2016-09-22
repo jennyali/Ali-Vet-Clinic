@@ -28,7 +28,7 @@ header {
 
         nav{
             @include display-flex(flex, row, space-between);
-            @include padding-and-margin(10px 10px 10px 10px);
+            @include padding-and-margin(10px 10px 10px 10px, null);
             @extend .center-width;
             align-items: center;
     }
