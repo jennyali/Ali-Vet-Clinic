@@ -1,0 +1,19 @@
+
+@mixin display-flex($display, $f-direct, $justify-cont){
+    display: $display;
+    flex-direction: $f-direct;
+    justify-content: $justify-cont;
+}
+
+
+@mixin font-style($font-family, $font-color, $font-size, $font-weight){
+    font-family: $font-family;
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin padding-and-margin($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
