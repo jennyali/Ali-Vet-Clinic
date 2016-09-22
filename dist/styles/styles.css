@@ -2,11 +2,11 @@ img {
   width: 20%;
   height: 20%; }
 
-.header-shadow, header {
+.header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
 .center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
-  width: 1000px; }
+  width: 980px; }
 
 header {
   display: -ms-flexbox;
@@ -14,8 +14,13 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  color: black;
-  font-size: 12px; }
+  color: dimgrey;
+  font-size: 12.5px;
+  font-weight: normal;
+  position: fixed;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%; }
 
 .phone-block {
   display: -ms-flexbox;
@@ -26,7 +31,7 @@ header {
   .phone-block .phone-box p {
     color: lightseagreen;
     font-weight: bold;
-    padding: 10px 25px 10px 0px;
+    padding: 10px 15px 10px 0px;
     margin: 0px;
     text-align: right; }
 
@@ -53,34 +58,44 @@ header {
   flex-direction: row;
   color: darkgrey;
   font-size: 24px;
+  margin: 0px;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0px; }
+  text-transform: uppercase; }
   .logo-container img {
-    padding: 10px 0px 10px 0px;
-    width: 130px;
-    height: 120px; }
+    padding: 5px 0px 5px 0px;
+    width: 110px;
+    height: 100px;
+    opacity: 0.7; }
   .logo-container span {
-    color: black;
-    font-weight: bolder; }
+    font-family: "Montserrat", sans-serif;
+    color: dimgrey;
+    font-weight: normal; }
 
 .navbar {
   list-style: none; }
   .navbar li {
-    margin: 0px 30px 0px 0px;
+    margin: 0px 15px 0px 15px;
     display: inline-block; }
 
-.header-shadow, header {
+.header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
 .center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
-  width: 1000px; }
+  width: 980px; }
 
-.header-shadow, header {
+.header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
 .center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
-  width: 1000px; }
+  width: 980px; }
+
+.side-gradiant {
+  position: absolute;
+  width: 37%;
+  height: 50%;
+  background-color: rgba(211, 211, 211, 0.4);
+  z-index: 1; }
 
 .jumbotron {
   display: -ms-flexbox;
@@ -90,46 +105,59 @@ header {
   font-family: "Raleway", sans-serif;
   color: black;
   font-size: 16px;
-  position: relative; }
+  position: relative;
+  background-color: dimgrey;
+  height: 700px;
+  top: 165px; }
   .jumbotron .jumbo-text-container {
-    position: relative;
+    padding: 130px;
+    position: absolute;
     z-index: 2; }
-    .jumbotron .jumbo-text-container .jumbo-text {
-      background-color: white;
-      width: 300px; }
-      .jumbotron .jumbo-text-container .jumbo-text h1 {
-        color: black;
-        font-size: 48px;
-        font-weight: normal;
-        line-height: 48px; }
-        .jumbotron .jumbo-text-container .jumbo-text h1 span {
-          color: black;
-          font-size: 48px;
-          font-weight: bold; }
-      .jumbotron .jumbo-text-container .jumbo-text p {
-        margin: 40px 0px 40px 0px;
-        line-height: 24px; }
-      .jumbotron .jumbo-text-container .jumbo-text button {
-        color: white;
-        font-size: 16px;
-        padding: 10px 25px;
-        background-color: lightseagreen;
-        border: none; }
+
+.jumbo-text {
+  width: 280px;
+  position: relative; }
+  .jumbo-text h1 {
+    color: black;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 48px; }
+    .jumbo-text h1 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 48px;
+      font-weight: normal; }
+  .jumbo-text p {
+    margin: 40px 0px 40px 0px;
+    font-weight: bold;
+    line-height: 24px; }
+  .jumbo-text button {
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+    background-color: lightseagreen;
+    border: none; }
 
 .jumbo-img-slides {
-  position: relative;
-  background-color: lightgrey;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-  -ms-flex-item-align: start;
-  align-self: flex-start; }
+  height: 700px;
+  overflow: hidden;
+  -ms-flex-align: center;
+  align-items: center; }
   .jumbo-img-slides img {
     width: 100%;
-    position: relative;
-    z-index: 1; }
+    height: 1000px;
+    position: relative; }
 
 body {
   margin: 0px; }
+
+main {
+  position: relative; }
 
 /*# sourceMappingURL=styles.css.map */
