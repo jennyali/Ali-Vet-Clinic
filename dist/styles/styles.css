@@ -5,7 +5,7 @@ img {
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container {
   width: 980px; }
 
 header {
@@ -81,13 +81,13 @@ header {
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container {
   width: 980px; }
 
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container {
   width: 980px; }
 
 .side-gradiant {
@@ -157,7 +157,7 @@ header {
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container {
   width: 980px; }
 
 .services-section {
@@ -169,7 +169,7 @@ header {
   justify-content: center;
   position: relative;
   top: 200px;
-  z-index: 4; }
+  z-index: 3; }
   .services-section .services-container {
     display: -ms-flexbox;
     display: flex;
@@ -230,6 +230,47 @@ header {
       font-size: 14px;
       font-weight: normal;
       line-height: 22px; }
+
+.header-shadow {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container {
+  width: 980px; }
+
+.about-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  background-color: white;
+  z-index: 3;
+  height: 600px;
+  background-image: url("../images/about-bg-03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .about-section .about-text-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 30px;
+    color: white; }
+    .about-section .about-text-container h3 {
+      color: white; }
+      .about-section .about-text-container h3 span {
+        color: white; }
+    .about-section .about-text-container .about-content {
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 22px;
+      width: 65%;
+      position: relative; }
 
 body {
   margin: 0px; }
