@@ -1,0 +1,65 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.services-section{
+    @include display-flex(flex, column, center);
+    position: relative;
+    top: 200px;
+    z-index: 4;
+
+    .services-container{
+        @include display-flex(flex, row, null);
+        @extend .center-width;
+        align-self: center;
+        padding-top: 50px;
+    }
+
+}
+
+.services-title{
+    width: 35%;
+    position: relative;
+        
+    h3{
+        @include font-style( $primary-font-family, $text-primary-col, $Xlarge-font, normal);
+        line-height: 48px;
+        margin-top: 0px;
+
+            span{
+                @include font-style( $secondary-font-family, $text-primary-col, $Xlarge-font, normal);
+        }
+    }
+}
+
+.category-block{
+    @include display-flex(flex, row, space-between);
+    flex-wrap: wrap;
+    width: 65%;
+
+
+    .catergory{
+        @include display-flex(flex, row, null);
+        @include padding-and-margin( 10px 0px 20px 0px, null);
+        width: 45%;
+
+        div{
+            span{
+                @include font-style( null, $secondary-color, null, bolder);
+                position: relative;
+                top: 6px;
+                padding: 0px 20px 0px 20px;
+            }
+            h4{
+                @include font-style($third-font-family, $dark, $ml-font, normal);
+                text-transform: uppercase;
+                margin: 0px;
+            }
+
+            p{
+                @include font-style( $third-font-family, null, $sm-med-font, normal);
+                line-height: 22px;
+            }
+        }
+    }
+
+}
