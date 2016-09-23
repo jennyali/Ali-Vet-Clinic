@@ -1,0 +1,40 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.about-section{
+    @include display-flex(flex, null, center);
+    align-items: center;
+    position: relative;
+    top: 200px;
+    background-color: white;
+    z-index: 3;
+    height: 600px;
+    background-image: url('../images/about-bg-03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .about-text-container{
+        @include display-flex(flex, row, null);
+        @extend .center-width;
+        padding-bottom: 30px;
+        color: $text-secondary-col;
+
+        h3{
+            color:$text-secondary-col;
+
+            span{
+                color: $text-secondary-col;
+            }
+        }
+
+        .about-content{
+            @include font-style( $third-font-family, $text-secondary-col, $sm-med-font, normal);
+            line-height: 22px;
+            width: 65%;
+            position: relative;
+
+        }
+
+    }
+}
