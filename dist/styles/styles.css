@@ -5,7 +5,7 @@ img {
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
   width: 980px; }
 
 header {
@@ -81,19 +81,19 @@ header {
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
   width: 980px; }
 
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container {
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
   width: 980px; }
 
 .side-gradiant {
   position: absolute;
   width: 37%;
-  height: 50%;
+  height: 100%;
   background-color: rgba(211, 211, 211, 0.4);
   z-index: 1; }
 
@@ -102,7 +102,7 @@ header {
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 16px;
   position: relative;
@@ -118,23 +118,23 @@ header {
   width: 280px;
   position: relative; }
   .jumbo-text h1 {
+    font-family: "Raleway", sans-serif;
     color: black;
-    font-size: 48px;
+    font-size: 46px;
     font-weight: normal;
     line-height: 48px; }
     .jumbo-text h1 span {
       font-family: "Montserrat", sans-serif;
       color: black;
-      font-size: 48px;
+      font-size: 46px;
       font-weight: normal; }
   .jumbo-text p {
     margin: 40px 0px 40px 0px;
-    font-weight: bold;
     line-height: 24px; }
   .jumbo-text button {
     color: white;
-    font-size: 16px;
-    padding: 10px 25px;
+    font-size: 14px;
+    padding: 10px 28px;
     background-color: lightseagreen;
     border: none; }
 
@@ -153,6 +153,83 @@ header {
     width: 100%;
     height: 1000px;
     position: relative; }
+
+.header-shadow {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+
+.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container {
+  width: 980px; }
+
+.services-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+  z-index: 4; }
+  .services-section .services-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding-top: 50px; }
+
+.services-title {
+  width: 35%;
+  position: relative; }
+  .services-title h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 48px;
+    margin-top: 0px; }
+    .services-title h3 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 46px;
+      font-weight: normal; }
+
+.category-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 65%; }
+  .category-block .catergory {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 10px 0px 20px 0px;
+    width: 45%; }
+    .category-block .catergory div span {
+      color: salmon;
+      font-weight: bolder;
+      position: relative;
+      top: 6px;
+      padding: 0px 20px 0px 20px; }
+    .category-block .catergory div h4 {
+      font-family: "Open Sans", sans-serif;
+      color: dimgrey;
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin: 0px; }
+    .category-block .catergory div p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 22px; }
 
 body {
   margin: 0px; }

@@ -5,7 +5,7 @@
 .side-gradiant{
     position: absolute;
     width: 37%;
-    height: 50%;
+    height: 100%;
     background-color: rgba($light, 0.4);
     z-index: 1;
 }
@@ -13,7 +13,7 @@
 
 .jumbotron{
     @include display-flex(flex, null, center);
-    @include font-style($primary-font-family, $text-primary-col, $medium-font, null);
+    @include font-style($third-font-family, $text-primary-col, $medium-font, null);
     position: relative;
     background-color: $dark;
     height: 700px;
@@ -33,7 +33,7 @@
     position: relative;
 
         h1{
-            @include font-style( null, $text-primary-col, $Xlarge-font, normal);
+            @include font-style( $primary-font-family, $text-primary-col, $Xlarge-font, normal);
             line-height: 48px;
 
                 span{
@@ -43,13 +43,12 @@
 
         p{
             @include padding-and-margin( null, 40px 0px 40px 0px);
-            @include font-style( null, null, null, bold);
             line-height: 24px;
         }
 
         button{
-            @include font-style( null, $text-secondary-col, $medium-font, null);
-            @include padding-and-margin( 10px 25px, null);
+            @include font-style( null, $text-secondary-col, $sm-med-font, null);
+            @include padding-and-margin( 10px 28px, null);
             background-color: $primary-color;
             border: none;
     }
