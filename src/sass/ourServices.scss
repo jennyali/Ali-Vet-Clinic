@@ -16,26 +16,10 @@
 
 }
 
-.services-title{
-    width: 35%;
-    position: relative;
-        
-    h3{
-        @include font-style( $primary-font-family, $text-primary-col, $Xlarge-font, normal);
-        line-height: 48px;
-        margin-top: 0px;
-
-            span{
-                @include font-style( $secondary-font-family, $text-primary-col, $Xlarge-font, normal);
-        }
-    }
-}
-
 .category-block{
     @include display-flex(flex, row, space-between);
     flex-wrap: wrap;
     width: 65%;
-
 
     .catergory{
         @include display-flex(flex, row, null);
@@ -61,5 +45,4 @@
             }
         }
     }
-
 }
