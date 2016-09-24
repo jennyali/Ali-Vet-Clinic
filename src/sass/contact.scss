@@ -1,0 +1,41 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.contact-section{
+    @include display-flex(flex, null, center);
+    position: relative;
+    top: 200px;
+    height: 600px;
+    align-items: center;
+    z-index: 3;
+
+    .contact-container{
+        @include display-flex(flex, row, null);
+        @extend .center-width;
+
+        .contact-content{
+            position: relative;
+            width: 65%;
+        }
+    }
+}
+
+.contact-block-section{
+    padding-bottom: 30px;
+
+        h4{
+            @include font-style($third-font-family, $dark, $ml-font, normal);
+            text-transform: uppercase;
+            margin: 0px;
+        }
+
+        p{
+            @include font-style( $third-font-family, null, $sm-med-font, normal);
+            line-height: 22px;
+
+        }
+
+        span{
+            font-weight: bold;
+        }
+}
