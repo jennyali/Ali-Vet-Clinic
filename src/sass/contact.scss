@@ -4,14 +4,18 @@
 .contact-section{
     @include display-flex(flex, null, center);
     position: relative;
-    top: 200px;
-    height: 600px;
+    top: $top-default;
+    height: 800px;
     align-items: center;
-    z-index: 3;
+    background-color: rgba($light, 0.4);
 
     .contact-container{
         @include display-flex(flex, row, null);
-        @extend .center-width;
+        width: $center-width;
+
+        .contact-title{
+            @extend .section-title;
+        }
 
         .contact-content{
             position: relative;
@@ -21,21 +25,56 @@
 }
 
 .contact-block-section{
+    @include display-flex(flex, column, null);
     padding-bottom: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
 
-        h4{
-            @include font-style($third-font-family, $dark, $ml-font, normal);
-            text-transform: uppercase;
-            margin: 0px;
+
+        @include text-and-headings(){
+            h4{
+                margin-bottom: 30px;
+            }
+
+            span{
+                font-weight: bold;
+            }
+        };
+
+}
+
+.contact-block-section:nth-child(2){
+
+
+    figure{
+        width: 100%;
+        margin: 0px;
+        border: 3px solid white;
+
+        img{
+            width: 100%;
         }
+    }
+}
 
-        p{
-            @include font-style( $third-font-family, null, $sm-med-font, normal);
-            line-height: 22px;
 
-        }
+.contact-text{
+    @include display-flex(flex, row, space-between);
 
-        span{
-            font-weight: bold;
-        }
+    article{
+        height: 170px;
+        
+    }
+
+    article:first-child{
+        border-right: 1px solid $light;
+        width: 55%
+
+    }
+
+    article:nth-child(2){
+        padding-left: 60px;
+        width: 45%;
+    }
+
 }

@@ -1,12 +1,65 @@
-img {
-  width: 20%;
-  height: 20%; }
+.grey-grad, .side-gradiant {
+  position: absolute;
+  width: 36.5%;
+  height: 70%;
+  background-color: rgba(211, 211, 211, 0.4);
+  z-index: 1; }
+
+.grey-grad.white-grad, .white-grad.side-gradiant {
+  height: 800px;
+  z-index: 1;
+  background-color: white; }
 
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
+.section-title, .jumbo-text, .services-section .services-container .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
+  width: 35%;
+  position: relative;
+  z-index: 3; }
+  .section-title h3, .jumbo-text h3, .services-section .services-container .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 48px;
+    margin-top: 0px; }
+    .section-title h3 span, .jumbo-text h3 span, .services-section .services-container .services-title h3 span, .about-section .about-text-container .about-title h3 span, .contact-section .contact-container .contact-title h3 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 46px;
+      font-weight: normal; }
+
+.section-title.jumbo-font, .jumbo-font.jumbo-text, .services-section .services-container .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+  width: 280px; }
+  .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .services-section .services-container .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
+    margin-top: 40px; }
+
+.section-title.about-font h3, .about-font.jumbo-text h3, .services-section .services-container .about-font.services-title h3, .about-section .about-text-container .about-font.about-title h3, .contact-section .contact-container .about-font.contact-title h3 {
+  color: white; }
+  .section-title.about-font h3 span, .about-font.jumbo-text h3 span, .services-section .services-container .about-font.services-title h3 span, .about-section .about-text-container .about-font.about-title h3 span, .contact-section .contact-container .about-font.contact-title h3 span {
+    color: white; }
+
+.text-and-headings span {
+  color: salmon;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+  padding: 0px 20px 0px 20px; }
+
+.text-and-headings h4 {
+  font-family: "Open Sans", sans-serif;
+  color: dimgrey;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px; }
+
+.text-and-headings p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
 
 header {
   display: -ms-flexbox;
@@ -28,12 +81,14 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #e7e7e7; }
-  .phone-block .phone-box p {
-    color: lightseagreen;
-    font-weight: bold;
-    padding: 10px 15px 10px 0px;
-    margin: 0px;
-    text-align: right; }
+  .phone-block .phone-box {
+    width: 980px; }
+    .phone-block .phone-box p {
+      color: lightseagreen;
+      font-weight: bold;
+      padding: 10px 15px 10px 0px;
+      margin: 0px;
+      text-align: right; }
 
 .nav-block {
   display: -ms-flexbox;
@@ -48,6 +103,7 @@ header {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 10px 10px 10px 10px;
+    width: 980px;
     -ms-flex-align: center;
     align-items: center; }
 
@@ -78,24 +134,131 @@ header {
     margin: 0px 15px 0px 15px;
     display: inline-block; }
 
-.header-shadow {
-  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
-
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
-
-.header-shadow {
-  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
-
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
-
-.side-gradiant {
+.grey-grad, .side-gradiant {
   position: absolute;
-  width: 37%;
-  height: 100%;
+  width: 36.5%;
+  height: 70%;
   background-color: rgba(211, 211, 211, 0.4);
   z-index: 1; }
+
+.grey-grad.white-grad, .white-grad.side-gradiant {
+  height: 800px;
+  z-index: 1;
+  background-color: white; }
+
+.header-shadow {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+
+.section-title, .jumbo-text, .services-section .services-container .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
+  width: 35%;
+  position: relative;
+  z-index: 3; }
+  .section-title h3, .jumbo-text h3, .services-section .services-container .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 48px;
+    margin-top: 0px; }
+    .section-title h3 span, .jumbo-text h3 span, .services-section .services-container .services-title h3 span, .about-section .about-text-container .about-title h3 span, .contact-section .contact-container .contact-title h3 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 46px;
+      font-weight: normal; }
+
+.section-title.jumbo-font, .jumbo-font.jumbo-text, .services-section .services-container .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+  width: 280px; }
+  .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .services-section .services-container .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
+    margin-top: 40px; }
+
+.section-title.about-font h3, .about-font.jumbo-text h3, .services-section .services-container .about-font.services-title h3, .about-section .about-text-container .about-font.about-title h3, .contact-section .contact-container .about-font.contact-title h3 {
+  color: white; }
+  .section-title.about-font h3 span, .about-font.jumbo-text h3 span, .services-section .services-container .about-font.services-title h3 span, .about-section .about-text-container .about-font.about-title h3 span, .contact-section .contact-container .about-font.contact-title h3 span {
+    color: white; }
+
+.text-and-headings span {
+  color: salmon;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+  padding: 0px 20px 0px 20px; }
+
+.text-and-headings h4 {
+  font-family: "Open Sans", sans-serif;
+  color: dimgrey;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px; }
+
+.text-and-headings p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
+
+.grey-grad, .side-gradiant {
+  position: absolute;
+  width: 36.5%;
+  height: 70%;
+  background-color: rgba(211, 211, 211, 0.4);
+  z-index: 1; }
+
+.grey-grad.white-grad, .white-grad.side-gradiant {
+  height: 800px;
+  z-index: 1;
+  background-color: white; }
+
+.header-shadow {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+
+.section-title, .jumbo-text, .services-section .services-container .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
+  width: 35%;
+  position: relative;
+  z-index: 3; }
+  .section-title h3, .jumbo-text h3, .services-section .services-container .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 48px;
+    margin-top: 0px; }
+    .section-title h3 span, .jumbo-text h3 span, .services-section .services-container .services-title h3 span, .about-section .about-text-container .about-title h3 span, .contact-section .contact-container .contact-title h3 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 46px;
+      font-weight: normal; }
+
+.section-title.jumbo-font, .jumbo-font.jumbo-text, .services-section .services-container .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+  width: 280px; }
+  .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .services-section .services-container .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
+    margin-top: 40px; }
+
+.section-title.about-font h3, .about-font.jumbo-text h3, .services-section .services-container .about-font.services-title h3, .about-section .about-text-container .about-font.about-title h3, .contact-section .contact-container .about-font.contact-title h3 {
+  color: white; }
+  .section-title.about-font h3 span, .about-font.jumbo-text h3 span, .services-section .services-container .about-font.services-title h3 span, .about-section .about-text-container .about-font.about-title h3 span, .contact-section .contact-container .about-font.contact-title h3 span {
+    color: white; }
+
+.text-and-headings span {
+  color: salmon;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+  padding: 0px 20px 0px 20px; }
+
+.text-and-headings h4 {
+  font-family: "Open Sans", sans-serif;
+  color: dimgrey;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px; }
+
+.text-and-headings p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
 
 .jumbotron {
   display: -ms-flexbox;
@@ -111,23 +274,13 @@ header {
   top: 165px; }
   .jumbotron .jumbo-text-container {
     padding: 130px;
+    width: 980px;
     position: absolute;
-    z-index: 2; }
+    z-index: 3; }
 
 .jumbo-text {
   width: 280px;
   position: relative; }
-  .jumbo-text h1 {
-    font-family: "Raleway", sans-serif;
-    color: black;
-    font-size: 46px;
-    font-weight: normal;
-    line-height: 48px; }
-    .jumbo-text h1 span {
-      font-family: "Montserrat", sans-serif;
-      color: black;
-      font-size: 46px;
-      font-weight: normal; }
   .jumbo-text p {
     margin: 40px 0px 40px 0px;
     line-height: 24px; }
@@ -154,11 +307,68 @@ header {
     height: 1000px;
     position: relative; }
 
+.grey-grad, .side-gradiant {
+  position: absolute;
+  width: 36.5%;
+  height: 70%;
+  background-color: rgba(211, 211, 211, 0.4);
+  z-index: 1; }
+
+.grey-grad.white-grad, .white-grad.side-gradiant {
+  height: 800px;
+  z-index: 1;
+  background-color: white; }
+
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
+.section-title, .jumbo-text, .services-section .services-container .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
+  width: 35%;
+  position: relative;
+  z-index: 3; }
+  .section-title h3, .jumbo-text h3, .services-section .services-container .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 48px;
+    margin-top: 0px; }
+    .section-title h3 span, .jumbo-text h3 span, .services-section .services-container .services-title h3 span, .about-section .about-text-container .about-title h3 span, .contact-section .contact-container .contact-title h3 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 46px;
+      font-weight: normal; }
+
+.section-title.jumbo-font, .jumbo-font.jumbo-text, .services-section .services-container .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+  width: 280px; }
+  .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .services-section .services-container .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
+    margin-top: 40px; }
+
+.section-title.about-font h3, .about-font.jumbo-text h3, .services-section .services-container .about-font.services-title h3, .about-section .about-text-container .about-font.about-title h3, .contact-section .contact-container .about-font.contact-title h3 {
+  color: white; }
+  .section-title.about-font h3 span, .about-font.jumbo-text h3 span, .services-section .services-container .about-font.services-title h3 span, .about-section .about-text-container .about-font.about-title h3 span, .contact-section .contact-container .about-font.contact-title h3 span {
+    color: white; }
+
+.text-and-headings span {
+  color: salmon;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+  padding: 0px 20px 0px 20px; }
+
+.text-and-headings h4 {
+  font-family: "Open Sans", sans-serif;
+  color: dimgrey;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px; }
+
+.text-and-headings p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
 
 .services-section {
   display: -ms-flexbox;
@@ -168,13 +378,14 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  top: 200px;
+  top: 165px;
   z-index: 3; }
   .services-section .services-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
+    width: 980px;
     -ms-flex-item-align: center;
     align-self: center;
     padding-top: 50px; }
@@ -196,12 +407,6 @@ header {
     flex-direction: row;
     padding: 10px 0px 20px 0px;
     width: 45%; }
-    .category-block .catergory div span {
-      color: salmon;
-      font-weight: bolder;
-      position: relative;
-      top: 6px;
-      padding: 0px 20px 0px 20px; }
     .category-block .catergory div h4 {
       font-family: "Open Sans", sans-serif;
       color: dimgrey;
@@ -214,12 +419,75 @@ header {
       font-size: 14px;
       font-weight: normal;
       line-height: 22px; }
+    .category-block .catergory div span {
+      color: salmon;
+      font-weight: bolder;
+      position: relative;
+      top: 6px;
+      padding: 0px 20px 0px 20px; }
+
+.grey-grad, .side-gradiant {
+  position: absolute;
+  width: 36.5%;
+  height: 70%;
+  background-color: rgba(211, 211, 211, 0.4);
+  z-index: 1; }
+
+.grey-grad.white-grad, .white-grad.side-gradiant {
+  height: 800px;
+  z-index: 1;
+  background-color: white; }
 
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
+.section-title, .jumbo-text, .services-section .services-container .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
+  width: 35%;
+  position: relative;
+  z-index: 3; }
+  .section-title h3, .jumbo-text h3, .services-section .services-container .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 48px;
+    margin-top: 0px; }
+    .section-title h3 span, .jumbo-text h3 span, .services-section .services-container .services-title h3 span, .about-section .about-text-container .about-title h3 span, .contact-section .contact-container .contact-title h3 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 46px;
+      font-weight: normal; }
+
+.section-title.jumbo-font, .jumbo-font.jumbo-text, .services-section .services-container .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+  width: 280px; }
+  .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .services-section .services-container .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
+    margin-top: 40px; }
+
+.section-title.about-font h3, .about-font.jumbo-text h3, .services-section .services-container .about-font.services-title h3, .about-section .about-text-container .about-font.about-title h3, .contact-section .contact-container .about-font.contact-title h3 {
+  color: white; }
+  .section-title.about-font h3 span, .about-font.jumbo-text h3 span, .services-section .services-container .about-font.services-title h3 span, .about-section .about-text-container .about-font.about-title h3 span, .contact-section .contact-container .about-font.contact-title h3 span {
+    color: white; }
+
+.text-and-headings span {
+  color: salmon;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+  padding: 0px 20px 0px 20px; }
+
+.text-and-headings h4 {
+  font-family: "Open Sans", sans-serif;
+  color: dimgrey;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px; }
+
+.text-and-headings p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
 
 .about-section {
   display: -ms-flexbox;
@@ -229,7 +497,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  top: 200px;
+  top: 165px;
   background-color: white;
   z-index: 3;
   height: 600px;
@@ -241,12 +509,8 @@ header {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-bottom: 30px;
-    color: white; }
-    .about-section .about-text-container h3 {
-      color: white; }
-      .about-section .about-text-container h3 span {
-        color: white; }
+    width: 980px;
+    padding-bottom: 30px; }
     .about-section .about-text-container .about-content {
       font-family: "Open Sans", sans-serif;
       color: white;
@@ -256,33 +520,68 @@ header {
       width: 65%;
       position: relative; }
 
+.grey-grad, .side-gradiant {
+  position: absolute;
+  width: 36.5%;
+  height: 70%;
+  background-color: rgba(211, 211, 211, 0.4);
+  z-index: 1; }
+
+.grey-grad.white-grad, .white-grad.side-gradiant {
+  height: 800px;
+  z-index: 1;
+  background-color: white; }
+
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
-
-.section-title {
+.section-title, .jumbo-text, .services-section .services-container .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
   width: 35%;
-  position: relative; }
-  .section-title h3 {
+  position: relative;
+  z-index: 3; }
+  .section-title h3, .jumbo-text h3, .services-section .services-container .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
     font-size: 46px;
     font-weight: normal;
     line-height: 48px;
     margin-top: 0px; }
-    .section-title h3 span {
+    .section-title h3 span, .jumbo-text h3 span, .services-section .services-container .services-title h3 span, .about-section .about-text-container .about-title h3 span, .contact-section .contact-container .contact-title h3 span {
       font-family: "Montserrat", sans-serif;
       color: black;
       font-size: 46px;
       font-weight: normal; }
 
-.header-shadow {
-  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
+.section-title.jumbo-font, .jumbo-font.jumbo-text, .services-section .services-container .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+  width: 280px; }
+  .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .services-section .services-container .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
+    margin-top: 40px; }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
+.section-title.about-font h3, .about-font.jumbo-text h3, .services-section .services-container .about-font.services-title h3, .about-section .about-text-container .about-font.about-title h3, .contact-section .contact-container .about-font.contact-title h3 {
+  color: white; }
+  .section-title.about-font h3 span, .about-font.jumbo-text h3 span, .services-section .services-container .about-font.services-title h3 span, .about-section .about-text-container .about-font.about-title h3 span, .contact-section .contact-container .about-font.contact-title h3 span {
+    color: white; }
+
+.text-and-headings span {
+  color: salmon;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+  padding: 0px 20px 0px 20px; }
+
+.text-and-headings h4 {
+  font-family: "Open Sans", sans-serif;
+  color: dimgrey;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px; }
+
+.text-and-headings p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
 
 .contact-section {
   display: -ms-flexbox;
@@ -290,22 +589,29 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  top: 200px;
-  height: 600px;
+  top: 165px;
+  height: 800px;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 3; }
+  background-color: rgba(211, 211, 211, 0.4); }
   .contact-section .contact-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    width: 980px; }
     .contact-section .contact-container .contact-content {
       position: relative;
       width: 65%; }
 
 .contact-block-section {
-  padding-bottom: 30px; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding: 10px;
+  margin-bottom: 30px; }
   .contact-block-section h4 {
     font-family: "Open Sans", sans-serif;
     color: dimgrey;
@@ -318,22 +624,104 @@ header {
     font-size: 14px;
     font-weight: normal;
     line-height: 22px; }
+  .contact-block-section h4 {
+    margin-bottom: 30px; }
   .contact-block-section span {
     font-weight: bold; }
+
+.contact-block-section:nth-child(2) figure {
+  width: 100%;
+  margin: 0px;
+  border: 3px solid white; }
+  .contact-block-section:nth-child(2) figure img {
+    width: 100%; }
+
+.contact-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .contact-text article {
+    height: 170px; }
+  .contact-text article:first-child {
+    border-right: 1px solid lightgrey;
+    width: 55%; }
+  .contact-text article:nth-child(2) {
+    padding-left: 60px;
+    width: 45%; }
+
+.grey-grad, .side-gradiant {
+  position: absolute;
+  width: 36.5%;
+  height: 70%;
+  background-color: rgba(211, 211, 211, 0.4);
+  z-index: 1; }
+
+.grey-grad.white-grad, .white-grad.side-gradiant {
+  height: 800px;
+  z-index: 1;
+  background-color: white; }
 
 .header-shadow {
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.07); }
 
-.center-width, .phone-block .phone-box, .nav-block nav, .jumbotron .jumbo-text-container, .services-section .services-container, .about-section .about-text-container, .contact-section .contact-container {
-  width: 980px; }
+.section-title, .jumbo-text, .services-section .services-container .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
+  width: 35%;
+  position: relative;
+  z-index: 3; }
+  .section-title h3, .jumbo-text h3, .services-section .services-container .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 48px;
+    margin-top: 0px; }
+    .section-title h3 span, .jumbo-text h3 span, .services-section .services-container .services-title h3 span, .about-section .about-text-container .about-title h3 span, .contact-section .contact-container .contact-title h3 span {
+      font-family: "Montserrat", sans-serif;
+      color: black;
+      font-size: 46px;
+      font-weight: normal; }
+
+.section-title.jumbo-font, .jumbo-font.jumbo-text, .services-section .services-container .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+  width: 280px; }
+  .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .services-section .services-container .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
+    margin-top: 40px; }
+
+.section-title.about-font h3, .about-font.jumbo-text h3, .services-section .services-container .about-font.services-title h3, .about-section .about-text-container .about-font.about-title h3, .contact-section .contact-container .about-font.contact-title h3 {
+  color: white; }
+  .section-title.about-font h3 span, .about-font.jumbo-text h3 span, .services-section .services-container .about-font.services-title h3 span, .about-section .about-text-container .about-font.about-title h3 span, .contact-section .contact-container .about-font.contact-title h3 span {
+    color: white; }
+
+.text-and-headings span {
+  color: salmon;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+  padding: 0px 20px 0px 20px; }
+
+.text-and-headings h4 {
+  font-family: "Open Sans", sans-serif;
+  color: dimgrey;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px; }
+
+.text-and-headings p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
 
 .scrollUp-bar {
   position: relative;
-  top: 200px; }
+  top: 165px; }
 
 footer {
   position: relative;
-  top: 200px; }
+  top: 165px; }
 
 body {
   margin: 0px; }
