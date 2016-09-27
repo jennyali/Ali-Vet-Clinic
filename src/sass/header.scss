@@ -16,7 +16,7 @@ header {
     background-color: lighten( $light, 8);
 
     .phone-box{
-        @extend .center-width;
+        width: $center-width;
 
         p{
             @include font-style( null, $primary-color, null, bold);
@@ -32,7 +32,7 @@ header {
         nav{
             @include display-flex(flex, row, space-between);
             @include padding-and-margin(10px 10px 10px 10px, null);
-            @extend .center-width;
+            width: $center-width;
             align-items: center;
     }
 }
