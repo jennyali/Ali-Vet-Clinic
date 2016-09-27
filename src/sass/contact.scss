@@ -8,6 +8,7 @@
     height: 800px;
     align-items: center;
     background-color: rgba($light, 0.4);
+    padding-top: 60px;
 
     .contact-container{
         @include display-flex(flex, row, null);
@@ -72,7 +73,7 @@
         height: 102px;
 
             input{
-                @include font-style( $third-font-family, $text-secondary-col, $sm-med-font, normal);
+                @include font-style( $third-font-family, $text-primary-col, $sm-med-font, normal);
                 width: 48%;
                 height: 25px;
                 border: none;

@@ -62,9 +62,10 @@
 }
 
 .grey-grad.white-grad{
-    height: 1000px;
+    height: 1100px;
     z-index: $under-text;
     background-color: white;
+    width: 37%;
 }
 
 .header-shadow{
@@ -86,7 +87,7 @@
         margin-top: 0px;
 
             span{
-                @include font-style( $secondary-font-family, $text-primary-col, $Xlarge-font, normal);
+                @include font-style( $secondary-font-family, $text-primary-col, $Xlarge-font, bold);
         }
     }
 }
