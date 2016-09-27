@@ -2,11 +2,49 @@
 @import "mixins.scss";
 
 .scrollUp-bar{
+    @include display-flex(flex, row, space-around);
     position: relative;
     top: $top-default;
+    background-color: $secondary-color;
+    height: 70px;
+    align-items: center;
+    z-index: $onTop;
+
+    div{
+        text-align: center;
+
+        .up-arrow{
+             @include font-style( $third-font-family, $text-secondary-col, $large-font, normal);
+        }
+        p{
+            @include font-style( $third-font-family, $text-secondary-col, $sm-med-font, normal);
+            margin: 0px;
+        }
+    }
+
 }
 
 footer{
+    @include display-flex(flex, row, space-around);
     position: relative;
     top: $top-default;
+
+    .footer-content{
+        @include display-flex(flex, row, space-between);
+        width: $center-width;
+            p{
+                @include font-style( $third-font-family, null, $sm-med-font, normal);
+                line-height: 22px;
+                flex-grow: 3;
+            }
+
+            ul{
+                font-size: $ml-font;
+                list-style: none;
+
+                li{
+                    display: inline-block;
+                }
+            }
+    }
 }
