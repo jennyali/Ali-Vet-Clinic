@@ -33,12 +33,8 @@
             line-height: 24px;
         }
 
-        button{
-            @include font-style( null, $text-secondary-col, $sm-med-font, null);
-            @include padding-and-margin( 10px 28px, null);
-            background-color: $primary-color;
-            border: none;
-    }
+        @include primary-button(){};
+
 }
 
 .jumbo-img-slides{

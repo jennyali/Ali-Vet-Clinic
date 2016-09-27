@@ -6,7 +6,7 @@
   z-index: 1; }
 
 .grey-grad.white-grad, .white-grad.side-gradiant {
-  height: 800px;
+  height: 1000px;
   z-index: 1;
   background-color: white; }
 
@@ -142,7 +142,7 @@ header {
   z-index: 1; }
 
 .grey-grad.white-grad, .white-grad.side-gradiant {
-  height: 800px;
+  height: 1000px;
   z-index: 1;
   background-color: white; }
 
@@ -205,7 +205,7 @@ header {
   z-index: 1; }
 
 .grey-grad.white-grad, .white-grad.side-gradiant {
-  height: 800px;
+  height: 1000px;
   z-index: 1;
   background-color: white; }
 
@@ -315,7 +315,7 @@ header {
   z-index: 1; }
 
 .grey-grad.white-grad, .white-grad.side-gradiant {
-  height: 800px;
+  height: 1000px;
   z-index: 1;
   background-color: white; }
 
@@ -434,7 +434,7 @@ header {
   z-index: 1; }
 
 .grey-grad.white-grad, .white-grad.side-gradiant {
-  height: 800px;
+  height: 1000px;
   z-index: 1;
   background-color: white; }
 
@@ -528,7 +528,7 @@ header {
   z-index: 1; }
 
 .grey-grad.white-grad, .white-grad.side-gradiant {
-  height: 800px;
+  height: 1000px;
   z-index: 1;
   background-color: white; }
 
@@ -636,6 +636,51 @@ header {
   .contact-block-section:nth-child(2) figure img {
     width: 100%; }
 
+.contact-block-section:nth-child(3) form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .contact-block-section:nth-child(3) form button {
+    color: white;
+    font-size: 14px;
+    padding: 10px 28px;
+    background-color: lightseagreen;
+    border: none;
+    width: 48px;
+    padding: 7px 3px;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+
+.contact-inputboxes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 102px; }
+  .contact-inputboxes input {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    width: 48%;
+    height: 25px;
+    border: none;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    padding: 2px 0px 2px 5px; }
+  .contact-inputboxes textarea {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    width: 50%;
+    height: 92px;
+    border: none;
+    padding: 3px 0px 2px 5px; }
+
 .contact-text {
   display: -ms-flexbox;
   display: flex;
@@ -660,7 +705,7 @@ header {
   z-index: 1; }
 
 .grey-grad.white-grad, .white-grad.side-gradiant {
-  height: 800px;
+  height: 1000px;
   z-index: 1;
   background-color: white; }
 
@@ -716,12 +761,62 @@ header {
   line-height: 22px; }
 
 .scrollUp-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   position: relative;
-  top: 165px; }
+  top: 165px;
+  background-color: salmon;
+  height: 70px;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 3; }
+  .scrollUp-bar div {
+    text-align: center; }
+    .scrollUp-bar div .up-arrow {
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-size: 24px;
+      font-weight: normal; }
+    .scrollUp-bar div p {
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0px; }
 
 footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   position: relative;
   top: 165px; }
+  footer .footer-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 980px; }
+    footer .footer-content p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 22px;
+      -ms-flex-positive: 3;
+      flex-grow: 3; }
+    footer .footer-content ul {
+      font-size: 20px;
+      list-style: none; }
+      footer .footer-content ul li {
+        display: inline-block; }
 
 body {
   margin: 0px; }

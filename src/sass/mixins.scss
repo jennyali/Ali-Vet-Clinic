@@ -38,6 +38,16 @@
     @content;
 }
 
+@mixin primary-button(){
+            
+    button{
+            @include font-style( null, $text-secondary-col, $sm-med-font, null);
+            @include padding-and-margin( 10px 28px, null);
+            background-color: $primary-color;
+            border: none;
+            @content;
+    }
+}
 
 //==== extentions ======
 
@@ -52,7 +62,7 @@
 }
 
 .grey-grad.white-grad{
-    height: 800px;
+    height: 1000px;
     z-index: $under-text;
     background-color: white;
 }

@@ -30,7 +30,6 @@
     padding: 10px;
     margin-bottom: 30px;
 
-
         @include text-and-headings(){
             h4{
                 margin-bottom: 30px;
@@ -44,8 +43,6 @@
 }
 
 .contact-block-section:nth-child(2){
-
-
     figure{
         width: 100%;
         margin: 0px;
@@ -57,24 +54,58 @@
     }
 }
 
+.contact-block-section:nth-child(3){
+        form{
+            @include display-flex(flex, column, null);
+
+            @include primary-button(){
+                width: 48px;
+                @include padding-and-margin( 7px 3px, null);
+                align-self: flex-end;
+            };
+        }
+}
+
+.contact-inputboxes{
+        @include display-flex(flex, column, null);
+        flex-wrap: wrap;
+        height: 102px;
+
+            input{
+                @include font-style( $third-font-family, $text-secondary-col, $sm-med-font, normal);
+                width: 48%;
+                height: 25px;
+                border: none;
+                margin-bottom: 5px;
+                margin-right: 3px;
+                padding: 2px 0px 2px 5px;    
+            }
+
+            textarea{
+                @include font-style( $third-font-family, $text-secondary-col, $sm-med-font, normal);
+                width: 50%;
+                height: 92px;
+                border: none;
+                padding: 3px 0px 2px 5px;
+            }
+}
 
 .contact-text{
     @include display-flex(flex, row, space-between);
 
-    article{
-        height: 170px;
-        
-    }
+            article{
+                height: 170px;
+                
+            }
 
-    article:first-child{
-        border-right: 1px solid $light;
-        width: 55%
+            article:first-child{
+                border-right: 1px solid $light;
+                width: 55%
 
-    }
+            }
 
-    article:nth-child(2){
-        padding-left: 60px;
-        width: 45%;
-    }
-
+            article:nth-child(2){
+                padding-left: 60px;
+                width: 45%;
+            }
 }
