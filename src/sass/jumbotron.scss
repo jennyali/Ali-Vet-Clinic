@@ -3,13 +3,8 @@
 
 
 .side-gradiant{
-    position: absolute;
-    width: 37%;
-    height: 100%;
-    background-color: rgba($light, 0.4);
-    z-index: 1;
+    @extend .grey-grad;
 }
-
 
 .jumbotron{
     @include display-flex(flex, null, center);
@@ -17,29 +12,21 @@
     position: relative;
     background-color: $dark;
     height: 700px;
-    top: 165px;
+    top: $top-default;
 
     .jumbo-text-container{
-        @extend .center-width;
         @include padding-and-margin(130px null null null, null);
+        width: $center-width;
         position: absolute;
-        z-index: 2;
+        z-index: $onTop;
         
     }
 }
 
 .jumbo-text{
+    @extend .section-title;
     width: 280px;
     position: relative;
-
-        h1{
-            @include font-style( $primary-font-family, $text-primary-col, $Xlarge-font, normal);
-            line-height: 48px;
-
-                span{
-                    @include font-style( $secondary-font-family, $text-primary-col, $Xlarge-font, normal);
-                }
-        }
 
         p{
             @include padding-and-margin( null, 40px 0px 40px 0px);
@@ -53,9 +40,6 @@
             border: none;
     }
 }
-
-
-
 
 .jumbo-img-slides{
     display: flex;
@@ -71,7 +55,5 @@
             width: 100%;
             height: 1000px;
             position: relative;
-            
-
     }
 }

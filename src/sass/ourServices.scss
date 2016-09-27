@@ -4,16 +4,19 @@
 .services-section{
     @include display-flex(flex, column, center);
     position: relative;
-    top: 200px;
-    z-index: 3;
+    top: $top-default;
+    z-index: $onTop;
 
     .services-container{
         @include display-flex(flex, row, null);
-        @extend .center-width;
+        width: $center-width;
         align-self: center;
         padding-top: 50px;
-    }
 
+        .services-title{
+            @extend .section-title;
+        }
+    }
 }
 
 .category-block{
@@ -27,22 +30,14 @@
         width: 45%;
 
         div{
-            span{
-                @include font-style( null, $secondary-color, null, bolder);
-                position: relative;
-                top: 6px;
-                padding: 0px 20px 0px 20px;
-            }
-            h4{
-                @include font-style($third-font-family, $dark, $ml-font, normal);
-                text-transform: uppercase;
-                margin: 0px;
-            }
-
-            p{
-                @include font-style( $third-font-family, null, $sm-med-font, normal);
-                line-height: 22px;
-            }
+            @include text-and-headings(){
+                span{
+                    @include font-style( null, $secondary-color, null, bolder);
+                    position: relative;
+                    top: 6px;
+                    padding: 0px 20px 0px 20px;
+                }
+            };
         }
     }
 }

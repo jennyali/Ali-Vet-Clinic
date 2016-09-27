@@ -5,9 +5,9 @@
     @include display-flex(flex, null, center);
     align-items: center;
     position: relative;
-    top: 200px;
+    top: $top-default;
     background-color: white;
-    z-index: 3;
+    z-index: $onTop;
     height: 600px;
     background-image: url('../images/about-bg-04.jpg');
     background-repeat: no-repeat;
@@ -16,16 +16,11 @@
 
     .about-text-container{
         @include display-flex(flex, row, null);
-        @extend .center-width;
+        width: $center-width;
         padding-bottom: 30px;
-        color: $text-secondary-col;
 
-        h3{
-            color:$text-secondary-col;
-
-            span{
-                color: $text-secondary-col;
-            }
+        .about-title{
+            @extend .section-title;
         }
 
         .about-content{

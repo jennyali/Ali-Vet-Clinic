@@ -1,3 +1,5 @@
+// ===== mixins with arguments ====
+
 
 @mixin display-flex($display, $f-direct, $justify-cont){
     display: $display;
@@ -16,4 +18,102 @@
 @mixin padding-and-margin($padding, $margin){
     padding: $padding;
     margin: $margin;
+}
+
+
+//==== none argument mixins ======
+
+@mixin text-and-headings(){
+    h4{
+        @include font-style($third-font-family, $dark, $ml-font, normal);
+        text-transform: uppercase;
+        margin: 0px;
+    }
+
+    p{
+        @include font-style( $third-font-family, null, $sm-med-font, normal);
+        line-height: 22px;
+    }
+
+    @content;
+}
+
+
+//==== extentions ======
+
+// side-gradient
+
+.grey-grad{
+    position: absolute;
+    width: 36.5%;
+    height: 70%;
+    background-color: rgba($light, 0.4);
+    z-index: $under-text;
+}
+
+.grey-grad.white-grad{
+    height: 800px;
+    z-index: $under-text;
+    background-color: white;
+}
+
+.header-shadow{
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.07);
+}
+
+// main sections titles on Left
+
+.section-title{
+    width: 35%;
+    position: relative;
+    z-index: 3;
+        
+    h3{
+        @include font-style( $primary-font-family, $text-primary-col, $Xlarge-font, normal);
+        line-height: 48px;
+        margin-top: 0px;
+
+            span{
+                @include font-style( $secondary-font-family, $text-primary-col, $Xlarge-font, normal);
+        }
+    }
+}
+
+.section-title.jumbo-font{
+    width: 280px;
+
+        h3{margin-top: 40px;}
+}
+
+.section-title.about-font{
+        h3{
+            color:$text-secondary-col;
+
+            span{
+                color: $text-secondary-col;
+            }
+        }
+}
+
+// standard paragraph and heading styles for small text
+
+.text-and-headings{
+            span{
+                @include font-style( null, $secondary-color, null, bolder);
+                position: relative;
+                top: 6px;
+                padding: 0px 20px 0px 20px;
+            }
+            h4{
+                @include font-style($third-font-family, $dark, $ml-font, normal);
+                text-transform: uppercase;
+                margin: 0px;
+            }
+
+            p{
+                @include font-style( $third-font-family, null, $sm-med-font, normal);
+                line-height: 22px;
+            }
 }
