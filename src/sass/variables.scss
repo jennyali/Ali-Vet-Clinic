@@ -1,7 +1,7 @@
 // color palette
 
 $primary-color: lightseagreen;
-$secondary-color: salmon;
+$secondary-color: rgba($primary-color, 0.4);
 $light: lightgrey;
 $medium: darkgrey;
 $dark: dimgrey;

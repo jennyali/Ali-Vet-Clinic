@@ -11,7 +11,7 @@
         @include display-flex(flex, row, null);
         width: $center-width;
         align-self: center;
-        padding-top: 50px;
+        padding-top: 90px;
 
         .services-title{
             @extend .section-title;
@@ -23,6 +23,7 @@
     @include display-flex(flex, row, space-between);
     flex-wrap: wrap;
     width: 65%;
+    padding-bottom: 50px;
 
     .catergory{
         @include display-flex(flex, row, null);

@@ -5,7 +5,7 @@
     @include display-flex(flex, row, space-around);
     position: relative;
     top: $top-default;
-    background-color: $secondary-color;
+    background-color: rgba($primary-color, 0.4);
     height: 70px;
     align-items: center;
     z-index: $onTop;
@@ -28,6 +28,7 @@ footer{
     @include display-flex(flex, row, space-around);
     position: relative;
     top: $top-default;
+    height: 50px;
 
     .footer-content{
         @include display-flex(flex, row, space-between);
@@ -36,11 +37,15 @@ footer{
                 @include font-style( $third-font-family, null, $sm-med-font, normal);
                 line-height: 22px;
                 flex-grow: 3;
+                margin-top: 8px;
             }
 
             ul{
-                font-size: $ml-font;
+                font-size: $large-font;
                 list-style: none;
+                margin-top: 8px;
+                color: $dark;
+
 
                 li{
                     display: inline-block;
