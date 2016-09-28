@@ -6,6 +6,10 @@
     position: relative;
     top: $top-default;
     z-index: $onTop;
+    
+        @include mediaQ($small-screen){
+            top: 0px;
+        }
 
     .services-container{
         @include display-flex(flex, row, null);
@@ -13,10 +17,24 @@
         align-self: center;
         padding-top: 90px;
 
-        .services-title{
-            @extend .section-title;
-        }
+            @include mediaQ($small-screen){
+                @include display-flex(flex, column, null);
+                width: 100%;
+                padding-top: 0px;
+            }
     }
+}
+
+.services-title{
+    @extend .section-title;
+
+        @include mediaQ($small-screen){
+            @include display-flex(flex, null, flex-start);
+            width: 120px;
+            margin: 0px 30px;
+            background-color: lighten( $light, 8);
+            padding: 30px 20px 0px 20px;
+        }
 }
 
 .category-block{
@@ -25,13 +43,30 @@
     width: 65%;
     padding-bottom: 50px;
 
+        @include mediaQ($small-screen){
+            width: 100%;
+            padding-top: 10px;
+        }
+
     .catergory{
         @include display-flex(flex, row, null);
         @include padding-and-margin( 10px 0px 20px 0px, null);
         width: 45%;
 
+            @include mediaQ($small-screen){
+                @include padding-and-margin( 20px 0px 0px 0px, 0px 30px);
+                width: 100%;
+            }
+
         div{
             @include text-and-headings(){
+                @include mediaQ($small-screen){
+                    h4{
+                        margin-bottom: 20px;
+                        font-size: $large-font;
+                    }
+                }
+
                 span{
                     @include font-style( null, $secondary-color, null, bolder);
                     position: relative;
