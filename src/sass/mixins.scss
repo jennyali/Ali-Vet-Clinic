@@ -93,11 +93,19 @@
     width: 35%;
     position: relative;
     z-index: 3;
+
+        @include mediaQ($small-screen){
+            width: 360px;
+        }
         
     h3{
         @include font-style( $primary-font-family, $text-primary-col, $Xlarge-font, normal);
         line-height: 48px;
         margin-top: 0px;
+
+            @include mediaQ($small-screen){
+                margin-bottom: 36px;
+            };
 
             span{
                 @include font-style( $secondary-font-family, $text-primary-col, $Xlarge-font, bold);
@@ -152,4 +160,6 @@
                 @include font-style( $third-font-family, null, $sm-med-font, normal);
                 line-height: 22px;
             }
+
+
 }
