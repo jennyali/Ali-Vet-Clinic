@@ -3,16 +3,27 @@
 
 
 .side-gradiant{
+    display: flex;
     @extend .grey-grad;
+
+        @include mediaQ($small-screen){
+            display: none;
+        }
 }
 
 .jumbotron{
     @include display-flex(flex, null, center);
     @include font-style($third-font-family, $text-primary-col, $medium-font, null);
     position: relative;
-    background-color: $dark;
     height: 700px;
     top: $top-default;
+        
+        @include mediaQ($small-screen){
+            @include display-flex(flex, column-reverse, center);
+            top: 0px;
+            height: 100%;
+        }
+
 
     .jumbo-text-container{
         @include padding-and-margin(130px null null null, null);
@@ -20,6 +31,11 @@
         position: absolute;
         z-index: $onTop;
         
+                @include mediaQ($small-screen){
+                    @include padding-and-margin(0px null null null, null);
+                    position: relative;
+                    width: $small-screen;
+                }
     }
 }
 
@@ -28,9 +44,23 @@
     width: 280px;
     position: relative;
 
+        @include mediaQ($small-screen){
+            display: flex;
+            flex-direction: column;
+            width: 120px;
+            padding: 5px 20px 40px 20px;
+            margin: 30px;
+            background-color: lighten( $light, 8);
+        }
+
         p{
             @include padding-and-margin( null, 40px 0px 40px 0px);
             line-height: 24px;
+
+                @include mediaQ($small-screen){
+                    font-size: $ml-font;
+                    line-height: 26px;
+                }
         }
 
         @include primary-button(){};
@@ -47,9 +77,18 @@
     overflow: hidden;
     align-items: center;
 
+        @include mediaQ($small-screen){
+            position: relative;
+            height: 250px;
+        }
+
         img{
             width: 100%;
             height: 1000px;
             position: relative;
+
+                @include mediaQ($small-screen){
+                    height: 150%;
+                }
     }
 }
