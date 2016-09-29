@@ -63,11 +63,13 @@
                 @include mediaQ($small-screen){
                     h4{
                         margin-bottom: 20px;
-                        font-size: $large-font;
+                        font-size: $mobile-large-font;
                     }
 
                     p{
-                        font-size: $medium-font;
+                        font-size: $mobile-medium-font;
+                        padding-right: 20px;
+                        line-height: 24px;
                     }
                 }
 
@@ -76,6 +78,11 @@
                     position: relative;
                     top: 6px;
                     padding: 0px 20px 0px 20px;
+
+                        @include mediaQ($small-screen){
+                            font-size: $large-font;
+                            padding: 0px 15px 0px 0px;
+                        }
                 }
             };
         }

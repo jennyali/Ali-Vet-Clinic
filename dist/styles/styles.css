@@ -605,15 +605,21 @@ header {
     @media screen and (max-width: 480px) {
       .category-block .catergory div h4 {
         margin-bottom: 20px;
-        font-size: 24px; }
+        font-size: 28px; }
       .category-block .catergory div p {
-        font-size: 16px; } }
+        font-size: 18px;
+        padding-right: 20px;
+        line-height: 24px; } }
     .category-block .catergory div span {
       color: rgba(32, 178, 170, 0.4);
       font-weight: bolder;
       position: relative;
       top: 6px;
       padding: 0px 20px 0px 20px; }
+      @media screen and (max-width: 480px) {
+        .category-block .catergory div span {
+          font-size: 24px;
+          padding: 0px 15px 0px 0px; } }
 
 .grey-grad, .side-gradiant {
   position: absolute;
@@ -733,7 +739,7 @@ header {
       .about-section .about-text-container .about-title {
         -ms-flex-item-align: start;
         align-self: flex-start;
-        margin: 10px 0px 20px 0px; } }
+        margin: 10px 0px 30px 0px; } }
     .about-section .about-text-container .about-content {
       font-family: "Open Sans", sans-serif;
       color: white;
@@ -745,7 +751,7 @@ header {
       @media screen and (max-width: 480px) {
         .about-section .about-text-container .about-content {
           width: 100%;
-          font-size: 16px;
+          font-size: 18px;
           line-height: 24px; } }
       .about-section .about-text-container .about-content p:first-child {
         margin-top: 0px; }
@@ -892,13 +898,15 @@ header {
     margin-bottom: 30px; }
     @media screen and (max-width: 480px) {
       .contact-block-section h4 {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 20px; } }
   .contact-block-section span {
     font-weight: bold; }
   @media screen and (max-width: 480px) {
     .contact-block-section p {
-      font-size: 16px; } }
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 5px; } }
 
 .contact-block-section:nth-child(2) figure {
   width: 100%;
@@ -983,7 +991,8 @@ header {
       .contact-inputboxes input {
         width: 100%;
         margin-right: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         height: 50px;
         font-size: 24px;
         padding: 6px 0px 10px 10px; } }
@@ -1001,7 +1010,8 @@ header {
         width: 100%;
         padding: 20px 0px 10px 10px;
         font-size: 24px;
-        height: 180px; } }
+        height: 180px;
+        margin-top: 10px; } }
 
 .contact-text {
   display: -ms-flexbox;
@@ -1020,6 +1030,9 @@ header {
       justify-content: space-between; } }
   .contact-text article {
     height: 170px; }
+    @media screen and (max-width: 480px) {
+      .contact-text article {
+        height: 100%; } }
   .contact-text article:first-child {
     border-right: 1px solid lightgrey;
     width: 55%; }
@@ -1027,7 +1040,7 @@ header {
       .contact-text article:first-child {
         border-right: none;
         width: 100%;
-        margin-bottom: 60px; } }
+        margin-bottom: 40px; } }
   .contact-text article:nth-child(2) {
     padding-left: 60px;
     width: 45%; }
@@ -1195,7 +1208,7 @@ footer {
       margin-top: 8px; }
       @media screen and (max-width: 480px) {
         footer .footer-content p {
-          font-size: 16px; } }
+          font-size: 18px; } }
     footer .footer-content ul {
       font-size: 24px;
       list-style: none;
@@ -1210,7 +1223,7 @@ footer {
         display: inline-block; }
         @media screen and (max-width: 480px) {
           footer .footer-content ul li {
-            font-size: 24px; } }
+            font-size: 28px; } }
 
 body {
   margin: 0px; }
