@@ -67,7 +67,7 @@ footer{
                 margin-top: 8px;
 
                     @include mediaQ($small-screen){
-                        font-size: $medium-font;
+                        font-size: $mobile-medium-font;
                     }
             }
 
@@ -88,7 +88,7 @@ footer{
                     display: inline-block;
 
                     @include mediaQ($small-screen){
-                        font-size: $large-font;
+                        font-size: $mobile-large-font;
                     }
 
                 }

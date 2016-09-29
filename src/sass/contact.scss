@@ -58,7 +58,7 @@
                 margin-bottom: 30px;
 
                     @include mediaQ($small-screen){
-                        font-size: $large-font;
+                        font-size: $mobile-large-font;
                         margin-bottom: 20px;
                     }
             }
@@ -69,7 +69,9 @@
 
             p{
                 @include mediaQ($small-screen){
-                    font-size: $medium-font;
+                    font-size: $mobile-ml-font;
+                    line-height: 30px;
+                    margin-top: 5px;
                 }
             }
         };
@@ -147,7 +149,8 @@
                     @include mediaQ($small-screen){
                         width: 100%;
                         margin-right: 0px;
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
                         height: 50px;
                         font-size: $large-font;
                         padding: 6px 0px 10px 10px;  
@@ -167,7 +170,7 @@
                         padding: 20px 0px 10px 10px; 
                         font-size: $large-font;
                         height: 180px;
-
+                        margin-top: 10px;
                     }  
             }
 }
@@ -181,6 +184,10 @@
 
             article{
                 height: 170px;
+
+                    @include mediaQ($small-screen){
+                        height: 100%;
+                    }
                 
             }
 
@@ -191,7 +198,7 @@
                 @include mediaQ($small-screen){
                     border-right: none;
                     width: 100%;
-                    margin-bottom: 60px;
+                    margin-bottom: 40px;
                 }
 
             }
