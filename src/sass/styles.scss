@@ -14,4 +14,8 @@ body {
 
 main {
     position: relative;
+
+        @include mediaQ($small-screen){
+            overflow: hidden;
+        }
 }

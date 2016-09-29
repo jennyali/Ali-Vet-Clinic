@@ -10,15 +10,30 @@
     align-items: center;
     z-index: $onTop;
 
+            @include mediaQ($small-screen){
+                top: 0px;
+                height: 160px;
+            }
+
     div{
         text-align: center;
 
         .up-arrow{
              @include font-style( $third-font-family, $text-secondary-col, $large-font, normal);
+        
+              @include mediaQ($small-screen){
+                    font-size: $Xlarge-font;
+                    height: 45px;
+            }
         }
+
         p{
             @include font-style( $third-font-family, $text-secondary-col, $sm-med-font, normal);
             margin: 0px;
+
+                @include mediaQ($small-screen){
+                    font-size: $large-font;
+                }
         }
     }
 
@@ -30,14 +45,30 @@ footer{
     top: $top-default;
     height: 50px;
 
+        @include mediaQ($small-screen){
+            top: 0px;
+            height: 100%;
+        }
+
     .footer-content{
         @include display-flex(flex, row, space-between);
         width: $center-width;
+
+            @include mediaQ($small-screen){
+                @include display-flex(flex, column-reverse, space-between);
+                width: 100%;
+                align-items: center;
+            }
+
             p{
                 @include font-style( $third-font-family, null, $sm-med-font, normal);
                 line-height: 22px;
                 flex-grow: 3;
                 margin-top: 8px;
+
+                    @include mediaQ($small-screen){
+                        font-size: $medium-font;
+                    }
             }
 
             ul{
@@ -46,9 +77,20 @@ footer{
                 margin-top: 8px;
                 color: $dark;
 
+                    @include mediaQ($small-screen){
+                        margin-top: 30px;
+                        margin-bottom: 5px;
+                        padding: 0px;
+                     }
+
 
                 li{
                     display: inline-block;
+
+                    @include mediaQ($small-screen){
+                        font-size: $large-font;
+                    }
+
                 }
             }
     }
