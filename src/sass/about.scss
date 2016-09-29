@@ -13,14 +13,32 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+        @include mediaQ($small-screen){
+            top: 0px;
+            height: 100%;
+        }
+
 
     .about-text-container{
         @include display-flex(flex, row, null);
         width: $center-width;
         padding-bottom: 30px;
 
+                    @include mediaQ($small-screen){
+                        @include display-flex(flex, column, null);
+                        align-items: center;
+                        width: 100%;
+                        padding: 30px;
+                        padding-bottom: 50px;
+                    }
+
         .about-title{
             @extend .section-title;
+
+                @include mediaQ($small-screen){
+                    align-self: flex-start;
+                    margin: 10px 0px 20px 0px;
+                };
         }
 
         .about-content{
@@ -28,6 +46,12 @@
             line-height: 22px;
             width: 65%;
             position: relative;
+
+                @include mediaQ($small-screen){
+                    width: 100%;
+                    font-size: $medium-font;
+                    line-height: 24px;
+                }
 
             p:first-child{
                 margin-top: 0px;

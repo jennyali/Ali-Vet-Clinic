@@ -10,9 +10,22 @@
     background-color: rgba($light, 0.4);
     padding-top: 60px;
 
+            @include mediaQ($small-screen){
+                top: 0px;
+                height: 100%;
+                padding-top: 30px;
+            }
+
     .contact-container{
         @include display-flex(flex, row, null);
         width: $center-width;
+
+                @include mediaQ($small-screen){
+                    @include display-flex(flex, column, null);
+                    width: 100%;
+                    padding: 30px;
+
+                }
 
         .contact-title{
             @extend .section-title;
@@ -21,6 +34,11 @@
         .contact-content{
             position: relative;
             width: 65%;
+
+                @include mediaQ($small-screen){
+                    width: 100%;
+                }
+
         }
     }
 }
@@ -31,13 +49,28 @@
     padding: 10px;
     margin-bottom: 30px;
 
+        @include mediaQ($small-screen){
+            padding: 0px;
+        }
+
         @include text-and-headings(){
             h4{
                 margin-bottom: 30px;
+
+                    @include mediaQ($small-screen){
+                        font-size: $large-font;
+                        margin-bottom: 20px;
+                    }
             }
 
             span{
                 font-weight: bold;
+            }
+
+            p{
+                @include mediaQ($small-screen){
+                    font-size: $medium-font;
+                }
             }
         };
 
@@ -49,8 +82,20 @@
         margin: 0px;
         border: 3px solid white;
 
+            @include mediaQ($small-screen){
+                @include display-flex(flex, row, center);
+                height: 280px;
+                border: 5px solid white;
+                overflow: hidden;
+            }
+
         img{
             width: 100%;
+
+            @include mediaQ($small-screen){
+                height: 100%;
+                width: 200%;
+            }
         }
     }
 }
@@ -64,6 +109,18 @@
                 @include padding-and-margin( 7px 3px, null);
                 align-self: flex-end;
             };
+
+            button{
+                @include mediaQ($small-screen){
+                    width: 70px;
+                    padding: 10px 5px;
+                    margin-top: 10px;
+                    align-self: flex-end;
+                }
+            }
+                @include mediaQ($small-screen){
+                    margin-top: 10px;
+                }
         }
 }
 
@@ -72,6 +129,12 @@
         flex-wrap: wrap;
         height: 102px;
 
+                @include mediaQ($small-screen){
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                }
+
             input{
                 @include font-style( $third-font-family, $text-primary-col, $sm-med-font, normal);
                 width: 48%;
@@ -79,7 +142,17 @@
                 border: none;
                 margin-bottom: 5px;
                 margin-right: 3px;
-                padding: 2px 0px 2px 5px;    
+                padding: 2px 0px 2px 5px;  
+
+                    @include mediaQ($small-screen){
+                        width: 100%;
+                        margin-right: 0px;
+                        margin-bottom: 20px;
+                        height: 50px;
+                        font-size: $large-font;
+                        padding: 6px 0px 10px 10px;  
+
+                    }  
             }
 
             textarea{
@@ -88,11 +161,23 @@
                 height: 92px;
                 border: none;
                 padding: 3px 0px 2px 5px;
+
+                    @include mediaQ($small-screen){
+                        width: 100%;
+                        padding: 20px 0px 10px 10px; 
+                        font-size: $large-font;
+                        height: 180px;
+
+                    }  
             }
 }
 
 .contact-text{
     @include display-flex(flex, row, space-between);
+
+        @include mediaQ($small-screen){
+            @include display-flex(flex, column, space-between);
+        }
 
             article{
                 height: 170px;
@@ -101,12 +186,23 @@
 
             article:first-child{
                 border-right: 1px solid $light;
-                width: 55%
+                width: 55%;
+
+                @include mediaQ($small-screen){
+                    border-right: none;
+                    width: 100%;
+                    margin-bottom: 60px;
+                }
 
             }
 
             article:nth-child(2){
                 padding-left: 60px;
                 width: 45%;
-            }
+
+                @include mediaQ($small-screen){
+                    padding-left: 0px;
+                    width: 100%;
+                }
+            }   
 }
