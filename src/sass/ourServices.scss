@@ -7,6 +7,10 @@
     top: $top-default;
     z-index: $onTop;
     
+    @include mediaQ($large-screen){
+        top: 80px;
+    }
+
         @include mediaQ($small-screen){
             top: 0px;
         }
@@ -16,6 +20,12 @@
         width: $center-width;
         align-self: center;
         padding-top: 90px;
+
+            @include mediaQ($large-screen){
+                @include display-flex(flex, column, null);
+                    width: $smaller-center-width;
+                    padding-top: 0px;
+            }
 
             @include mediaQ($small-screen){
                 @include display-flex(flex, column, null);
@@ -28,12 +38,18 @@
 .services-title{
     @extend .section-title;
 
-        @include mediaQ($small-screen){
+        @include mediaQ($large-screen){
             @include display-flex(flex, null, flex-start);
-            width: 120px;
-            margin: 0px 30px;
+            width: 100%;
+            margin: 0px;
             background-color: lighten( $light, 8);
+            padding: 0px;
+        }
+
+        @include mediaQ($small-screen){
+            width: 120px;
             padding: 30px 20px 0px 20px;
+            margin: 0px 30px;
         }
 }
 
@@ -42,6 +58,11 @@
     flex-wrap: wrap;
     width: 65%;
     padding-bottom: 50px;
+
+    @include mediaQ($large-screen){
+        width: 100%;
+        padding-top: 5%;
+    }
 
         @include mediaQ($small-screen){
             width: 100%;
@@ -52,6 +73,15 @@
         @include display-flex(flex, row, null);
         @include padding-and-margin( 10px 0px 20px 0px, null);
         width: 45%;
+
+        @include mediaQ($large-screen){
+            @include padding-and-margin( 0px 10px 0px 10px, 0px 0px 20px 0px);
+            width: 45%;
+        }
+
+            @include mediaQ($medium-screen){
+                width: 100%;
+            }
 
             @include mediaQ($small-screen){
                 @include padding-and-margin( 20px 0px 0px 0px, 0px 30px);
@@ -78,6 +108,10 @@
                     position: relative;
                     top: 6px;
                     padding: 0px 20px 0px 20px;
+
+                    @include mediaQ($large-screen){
+                        padding: 0px 15px 0px 0px;                    
+                    }
 
                         @include mediaQ($small-screen){
                             font-size: $large-font;

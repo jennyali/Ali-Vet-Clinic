@@ -53,6 +53,10 @@
             border: none;
             @content;
 
+                @include mediaQ($large-screen){
+                    margin-left: 20px;
+                }
+
                 @include mediaQ($small-screen){
                     @include padding-and-margin( 10px 19px, null);
                     font-size: $ml-font;
@@ -72,6 +76,11 @@
     height: 70%;
     background-color: rgba($light, 0.4);
     z-index: $under-text;
+
+        @include mediaQ($large-screen){
+            min-width: 400px;
+            height: 550px;
+        }
 }
 
 .grey-grad.white-grad{
@@ -79,6 +88,11 @@
     z-index: $under-text;
     background-color: white;
     width: 37%;
+
+        @include mediaQ($medium-screen){
+            display:none;
+        }
+
 }
 
 .header-shadow{
@@ -94,6 +108,10 @@
     position: relative;
     z-index: 3;
 
+        @include mediaQ($large-screen){
+            width: 100%;
+        }
+
         @include mediaQ($small-screen){
             width: 360px;
         }
@@ -103,6 +121,9 @@
         line-height: 48px;
         margin-top: 0px;
 
+        @include mediaQ($large-screen){
+            padding: 30px 20px 0px 20px;
+        }
             @include mediaQ($small-screen){
                 margin-bottom: 36px;
             };
