@@ -10,7 +10,7 @@
     background-color: rgba($light, 0.4);
     padding-top: 60px;
 
-            @include mediaQ($small-screen){
+            @include mediaQ($medium-screen){
                 top: 0px;
                 height: 100%;
                 padding-top: 30px;
@@ -20,7 +20,7 @@
         @include display-flex(flex, row, null);
         width: $center-width;
 
-                @include mediaQ($small-screen){
+                @include mediaQ($medium-screen){
                     @include display-flex(flex, column, null);
                     width: 100%;
                     padding: 30px;
@@ -35,7 +35,7 @@
             position: relative;
             width: 65%;
 
-                @include mediaQ($small-screen){
+                @include mediaQ($medium-screen){
                     width: 100%;
                 }
 
@@ -49,7 +49,7 @@
     padding: 10px;
     margin-bottom: 30px;
 
-        @include mediaQ($small-screen){
+        @include mediaQ($medium-screen){
             padding: 0px;
         }
 
@@ -57,7 +57,7 @@
             h4{
                 margin-bottom: 30px;
 
-                    @include mediaQ($small-screen){
+                    @include mediaQ($medium-screen){
                         font-size: $mobile-large-font;
                         margin-bottom: 20px;
                     }
@@ -68,7 +68,7 @@
             }
 
             p{
-                @include mediaQ($small-screen){
+                @include mediaQ($medium-screen){
                     font-size: $mobile-ml-font;
                     line-height: 30px;
                     margin-top: 5px;
@@ -113,14 +113,14 @@
             };
 
             button{
-                @include mediaQ($small-screen){
+                @include mediaQ($medium-screen){
                     width: 70px;
                     padding: 10px 5px;
                     margin-top: 10px;
                     align-self: flex-end;
                 }
             }
-                @include mediaQ($small-screen){
+                @include mediaQ($medium-screen){
                     margin-top: 10px;
                 }
         }
@@ -131,7 +131,7 @@
         flex-wrap: wrap;
         height: 102px;
 
-                @include mediaQ($small-screen){
+                @include mediaQ($medium-screen){
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
@@ -146,7 +146,7 @@
                 margin-right: 3px;
                 padding: 2px 0px 2px 5px;  
 
-                    @include mediaQ($small-screen){
+                    @include mediaQ($medium-screen){
                         width: 100%;
                         margin-right: 0px;
                         margin-bottom: 10px;
@@ -165,7 +165,7 @@
                 border: none;
                 padding: 3px 0px 2px 5px;
 
-                    @include mediaQ($small-screen){
+                    @include mediaQ($medium-screen){
                         width: 100%;
                         padding: 20px 0px 10px 10px; 
                         font-size: $large-font;
@@ -178,14 +178,14 @@
 .contact-text{
     @include display-flex(flex, row, space-between);
 
-        @include mediaQ($small-screen){
+        @include mediaQ($medium-screen){
             @include display-flex(flex, column, space-between);
         }
 
             article{
                 height: 170px;
 
-                    @include mediaQ($small-screen){
+                    @include mediaQ($medium-screen){
                         height: 100%;
                     }
                 
@@ -207,7 +207,7 @@
                 padding-left: 60px;
                 width: 45%;
 
-                @include mediaQ($small-screen){
+                @include mediaQ($medium-screen){
                     padding-left: 0px;
                     width: 100%;
                 }

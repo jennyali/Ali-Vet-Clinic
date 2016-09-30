@@ -13,6 +13,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include mediaQ($large-screen){
+        top: 90px;
+        height: 100%;
+    }
+
         @include mediaQ($small-screen){
             top: 0px;
             height: 100%;
@@ -24,13 +29,27 @@
         width: $center-width;
         padding-bottom: 30px;
 
-                    @include mediaQ($small-screen){
+        @include mediaQ($large-screen){
+             width: $smaller-center-width;
+             margin: 5%;
+        }
+
+        @include mediaQ($medium-screen){
+            padding: 30px;
+            margin: 0px;
+        }
+
+                    @include mediaQ($medium-screen){
                         @include display-flex(flex, column, null);
                         align-items: center;
                         width: 100%;
                         padding: 30px;
                         padding-bottom: 50px;
                     }
+
+        @include mediaQ($small-screen){
+            padding: 0px 0px 50px 0px;
+        }
 
         .about-title{
             @extend .section-title;
@@ -47,14 +66,35 @@
             width: 65%;
             position: relative;
 
+            @include mediaQ($large-screen){
+                width: 130%;
+                line-height: 24px;
+                margin: 20px;
+            }
+
+            @include mediaQ($medium-screen){
+                width: 100%;
+                margin: 0px;
+            }
+
                 @include mediaQ($small-screen){
                     width: 100%;
                     font-size: $mobile-medium-font;
-                    line-height: 24px;
+                    line-height: 26px;
                 }
 
             p:first-child{
                 margin-top: 0px;
+
+                @include mediaQ($large-screen){
+                    margin-top: 20px;
+                }
+            }
+
+            p{
+                @include mediaQ($large-screen){
+                    padding: 0px 20px;
+                }
             }
 
         }
