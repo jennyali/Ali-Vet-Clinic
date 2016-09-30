@@ -109,7 +109,8 @@
     z-index: 3;
 
         @include mediaQ($large-screen){
-            width: 100%;
+            width: 50%;
+            min-width: 400px;
         }
 
         @include mediaQ($small-screen){
@@ -126,6 +127,7 @@
         }
             @include mediaQ($small-screen){
                 margin-bottom: 36px;
+                padding: 30px 20px 0px 0px;
             };
 
             span{
@@ -155,6 +157,10 @@
 .section-title.about-font{
         h3{
             color:$text-secondary-col;
+
+            @include mediaQ($small-screen){
+                padding-left: 20px;
+            }
 
             span{
                 color: $text-secondary-col;
