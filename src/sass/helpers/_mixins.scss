@@ -1,0 +1,27 @@
+// ===== mixins with arguments ====
+
+
+@mixin display-flex($display, $f-direct, $justify-cont){
+    display: $display;
+    flex-direction: $f-direct;
+    justify-content: $justify-cont;
+}
+
+
+@mixin font-style($font-family, $font-color, $font-size, $font-weight){
+    font-family: $font-family;
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin mediaQ($width){
+    @media screen and (max-width: $width){
+        @content;
+    }
+}
+
+
+//==== none argument mixins ======
+
+//==== extentions ======

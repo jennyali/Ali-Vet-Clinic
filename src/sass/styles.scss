@@ -1,21 +1,4 @@
 
-@import "header.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "jumbotron.scss";
-@import "ourServices.scss";
-@import "about.scss";
-@import "contact.scss";
-@import "footer.scss";
-
-body {
-    margin: 0px;
-}
-
-main {
-    position: relative;
-
-        @include mediaQ($small-screen){
-            overflow: hidden;
-        }
-}
+@import "helpers/variables.scss";
+@import "helpers/mixins.scss";
+@import "layout/header.scss";
