@@ -10,6 +10,14 @@
     align-items: center;
     z-index: $onTop;
 
+            @include mediaQ($large-screen){
+                top: 90px;
+            }
+
+            @include mediaQ($medium-screen){
+                top: 70px;
+            }
+
             @include mediaQ($small-screen){
                 top: 0px;
                 height: 160px;
@@ -45,6 +53,15 @@ footer{
     top: $top-default;
     height: 50px;
 
+            @include mediaQ($medium-screen){
+                top: 70px;
+            }
+
+            @include mediaQ($large-screen){
+                top: 90px;
+            }
+
+
         @include mediaQ($small-screen){
             top: 0px;
             height: 100%;
@@ -53,6 +70,10 @@ footer{
     .footer-content{
         @include display-flex(flex, row, space-between);
         width: $center-width;
+
+        @include mediaQ($medium-screen){
+            width: $smaller-center-width;
+        }
 
             @include mediaQ($small-screen){
                 @include display-flex(flex, column-reverse, space-between);

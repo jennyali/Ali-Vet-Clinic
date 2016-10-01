@@ -69,11 +69,14 @@
 
                 @include mediaQ($large-screen){
                         padding-left: 20px;
+                        width: 280px;
                     }
 
                 @include mediaQ($small-screen){
                     font-size: $ml-font;
                     line-height: 26px;
+                    width: 340px;
+                    padding-left: 0px;
                 }
         }
 

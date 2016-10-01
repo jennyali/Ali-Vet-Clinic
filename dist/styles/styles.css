@@ -14,6 +14,9 @@
   z-index: 1;
   background-color: white;
   width: 37%; }
+  @media screen and (max-width: 1200px) {
+    .grey-grad.white-grad, .white-grad.side-gradiant {
+      display: none; } }
   @media screen and (max-width: 760px) {
     .grey-grad.white-grad, .white-grad.side-gradiant {
       display: none; } }
@@ -27,11 +30,11 @@
   z-index: 3; }
   @media screen and (max-width: 1200px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 50%;
+      width: 100%;
       min-width: 400px; } }
   @media screen and (max-width: 480px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 360px; } }
+      width: 200px; } }
   .section-title h3, .jumbo-text h3, .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
@@ -54,9 +57,12 @@
 
 .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
   width: 280px; }
+  @media screen and (max-width: 1200px) {
+    .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+      width: 300px; } }
   @media screen and (max-width: 480px) {
     .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
-      width: 360px; } }
+      width: 320px; } }
   .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
     margin-top: 40px; }
     @media screen and (max-width: 480px) {
@@ -257,6 +263,9 @@ header {
   z-index: 1;
   background-color: white;
   width: 37%; }
+  @media screen and (max-width: 1200px) {
+    .grey-grad.white-grad, .white-grad.side-gradiant {
+      display: none; } }
   @media screen and (max-width: 760px) {
     .grey-grad.white-grad, .white-grad.side-gradiant {
       display: none; } }
@@ -270,11 +279,11 @@ header {
   z-index: 3; }
   @media screen and (max-width: 1200px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 50%;
+      width: 100%;
       min-width: 400px; } }
   @media screen and (max-width: 480px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 360px; } }
+      width: 200px; } }
   .section-title h3, .jumbo-text h3, .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
@@ -297,9 +306,12 @@ header {
 
 .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
   width: 280px; }
+  @media screen and (max-width: 1200px) {
+    .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+      width: 300px; } }
   @media screen and (max-width: 480px) {
     .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
-      width: 360px; } }
+      width: 320px; } }
   .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
     margin-top: 40px; }
     @media screen and (max-width: 480px) {
@@ -352,6 +364,9 @@ header {
   z-index: 1;
   background-color: white;
   width: 37%; }
+  @media screen and (max-width: 1200px) {
+    .grey-grad.white-grad, .white-grad.side-gradiant {
+      display: none; } }
   @media screen and (max-width: 760px) {
     .grey-grad.white-grad, .white-grad.side-gradiant {
       display: none; } }
@@ -365,11 +380,11 @@ header {
   z-index: 3; }
   @media screen and (max-width: 1200px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 50%;
+      width: 100%;
       min-width: 400px; } }
   @media screen and (max-width: 480px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 360px; } }
+      width: 200px; } }
   .section-title h3, .jumbo-text h3, .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
@@ -392,9 +407,12 @@ header {
 
 .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
   width: 280px; }
+  @media screen and (max-width: 1200px) {
+    .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+      width: 300px; } }
   @media screen and (max-width: 480px) {
     .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
-      width: 360px; } }
+      width: 320px; } }
   .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
     margin-top: 40px; }
     @media screen and (max-width: 480px) {
@@ -496,11 +514,14 @@ header {
     line-height: 24px; }
     @media screen and (max-width: 1200px) {
       .jumbo-text p {
-        padding-left: 20px; } }
+        padding-left: 20px;
+        width: 280px; } }
     @media screen and (max-width: 480px) {
       .jumbo-text p {
         font-size: 20px;
-        line-height: 26px; } }
+        line-height: 26px;
+        width: 340px;
+        padding-left: 0px; } }
   .jumbo-text button {
     color: white;
     font-size: 14px;
@@ -514,8 +535,6 @@ header {
       .jumbo-text button {
         padding: 10px 19px;
         font-size: 20px;
-        -ms-flex-item-align: center;
-        align-self: center;
         width: 80%; } }
 
 .jumbo-img-slides {
@@ -567,6 +586,9 @@ header {
   z-index: 1;
   background-color: white;
   width: 37%; }
+  @media screen and (max-width: 1200px) {
+    .grey-grad.white-grad, .white-grad.side-gradiant {
+      display: none; } }
   @media screen and (max-width: 760px) {
     .grey-grad.white-grad, .white-grad.side-gradiant {
       display: none; } }
@@ -580,11 +602,11 @@ header {
   z-index: 3; }
   @media screen and (max-width: 1200px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 50%;
+      width: 100%;
       min-width: 400px; } }
   @media screen and (max-width: 480px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 360px; } }
+      width: 200px; } }
   .section-title h3, .jumbo-text h3, .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
@@ -607,9 +629,12 @@ header {
 
 .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
   width: 280px; }
+  @media screen and (max-width: 1200px) {
+    .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+      width: 300px; } }
   @media screen and (max-width: 480px) {
     .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
-      width: 360px; } }
+      width: 320px; } }
   .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
     margin-top: 40px; }
     @media screen and (max-width: 480px) {
@@ -794,6 +819,9 @@ header {
   z-index: 1;
   background-color: white;
   width: 37%; }
+  @media screen and (max-width: 1200px) {
+    .grey-grad.white-grad, .white-grad.side-gradiant {
+      display: none; } }
   @media screen and (max-width: 760px) {
     .grey-grad.white-grad, .white-grad.side-gradiant {
       display: none; } }
@@ -807,11 +835,11 @@ header {
   z-index: 3; }
   @media screen and (max-width: 1200px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 50%;
+      width: 100%;
       min-width: 400px; } }
   @media screen and (max-width: 480px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 360px; } }
+      width: 200px; } }
   .section-title h3, .jumbo-text h3, .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
@@ -834,9 +862,12 @@ header {
 
 .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
   width: 280px; }
+  @media screen and (max-width: 1200px) {
+    .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+      width: 300px; } }
   @media screen and (max-width: 480px) {
     .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
-      width: 360px; } }
+      width: 320px; } }
   .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
     margin-top: 40px; }
     @media screen and (max-width: 480px) {
@@ -977,6 +1008,9 @@ header {
   z-index: 1;
   background-color: white;
   width: 37%; }
+  @media screen and (max-width: 1200px) {
+    .grey-grad.white-grad, .white-grad.side-gradiant {
+      display: none; } }
   @media screen and (max-width: 760px) {
     .grey-grad.white-grad, .white-grad.side-gradiant {
       display: none; } }
@@ -990,11 +1024,11 @@ header {
   z-index: 3; }
   @media screen and (max-width: 1200px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 50%;
+      width: 100%;
       min-width: 400px; } }
   @media screen and (max-width: 480px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 360px; } }
+      width: 200px; } }
   .section-title h3, .jumbo-text h3, .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
@@ -1017,9 +1051,12 @@ header {
 
 .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
   width: 280px; }
+  @media screen and (max-width: 1200px) {
+    .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+      width: 300px; } }
   @media screen and (max-width: 480px) {
     .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
-      width: 360px; } }
+      width: 320px; } }
   .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
     margin-top: 40px; }
     @media screen and (max-width: 480px) {
@@ -1070,7 +1107,8 @@ header {
   padding-top: 60px; }
   @media screen and (max-width: 1200px) {
     .contact-section {
-      top: 80px; } }
+      top: 90px;
+      height: 100%; } }
   @media screen and (max-width: 760px) {
     .contact-section {
       top: 70px;
@@ -1099,6 +1137,9 @@ header {
     .contact-section .contact-container .contact-content {
       position: relative;
       width: 65%; }
+      @media screen and (max-width: 1200px) {
+        .contact-section .contact-container .contact-content {
+          width: 90%; } }
       @media screen and (max-width: 760px) {
         .contact-section .contact-container .contact-content {
           width: 100%; } }
@@ -1200,8 +1241,6 @@ header {
       .contact-block-section:nth-child(3) form button {
         padding: 10px 19px;
         font-size: 20px;
-        -ms-flex-item-align: center;
-        align-self: center;
         width: 80%; } }
   @media screen and (max-width: 760px) {
     .contact-block-section:nth-child(3) form {
@@ -1213,7 +1252,7 @@ header {
       -ms-flex-align: start;
       -ms-grid-row-align: flex-start;
       align-items: flex-start; } }
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 1200px) {
     .contact-block-section:nth-child(3) form button {
       width: 70px;
       padding: 10px 5px;
@@ -1240,7 +1279,7 @@ header {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   height: 102px; }
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 1200px) {
     .contact-inputboxes {
       width: 100%;
       height: 100%;
@@ -1264,15 +1303,18 @@ header {
     margin-bottom: 5px;
     margin-right: 3px;
     padding: 2px 0px 2px 5px; }
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 1200px) {
       .contact-inputboxes input {
-        width: 75%;
+        width: 100%;
         margin-right: 0px;
         margin-bottom: 5px;
         margin-top: 5px;
         height: 40px;
         font-size: 16px;
         padding: 4px 0px 8px 10px; } }
+    @media screen and (max-width: 760px) {
+      .contact-inputboxes input {
+        width: 75%; } }
     @media screen and (max-width: 480px) {
       .contact-inputboxes input {
         width: 100%;
@@ -1291,13 +1333,16 @@ header {
     height: 92px;
     border: none;
     padding: 3px 0px 2px 5px; }
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 1200px) {
       .contact-inputboxes textarea {
-        width: 75%;
+        width: 100%;
         padding: 20px 0px 10px 10px;
         font-size: 16px;
         height: 160px;
         margin-top: 5px; } }
+    @media screen and (max-width: 760px) {
+      .contact-inputboxes textarea {
+        width: 75%; } }
     @media screen and (max-width: 480px) {
       .contact-inputboxes textarea {
         width: 100%;
@@ -1323,6 +1368,9 @@ header {
       justify-content: space-between;
       padding-left: 0px;
       padding-top: 20px; } }
+  @media screen and (max-width: 760px) {
+    .contact-text {
+      padding-left: 20px; } }
   @media screen and (max-width: 480px) {
     .contact-text {
       padding-left: 0px;
@@ -1364,6 +1412,9 @@ header {
   z-index: 1;
   background-color: white;
   width: 37%; }
+  @media screen and (max-width: 1200px) {
+    .grey-grad.white-grad, .white-grad.side-gradiant {
+      display: none; } }
   @media screen and (max-width: 760px) {
     .grey-grad.white-grad, .white-grad.side-gradiant {
       display: none; } }
@@ -1377,11 +1428,11 @@ header {
   z-index: 3; }
   @media screen and (max-width: 1200px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 50%;
+      width: 100%;
       min-width: 400px; } }
   @media screen and (max-width: 480px) {
     .section-title, .jumbo-text, .services-title, .about-section .about-text-container .about-title, .contact-section .contact-container .contact-title {
-      width: 360px; } }
+      width: 200px; } }
   .section-title h3, .jumbo-text h3, .services-title h3, .about-section .about-text-container .about-title h3, .contact-section .contact-container .contact-title h3 {
     font-family: "Raleway", sans-serif;
     color: black;
@@ -1404,9 +1455,12 @@ header {
 
 .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
   width: 280px; }
+  @media screen and (max-width: 1200px) {
+    .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
+      width: 300px; } }
   @media screen and (max-width: 480px) {
     .section-title.jumbo-font, .jumbo-font.jumbo-text, .jumbo-font.services-title, .about-section .about-text-container .jumbo-font.about-title, .contact-section .contact-container .jumbo-font.contact-title {
-      width: 360px; } }
+      width: 320px; } }
   .section-title.jumbo-font h3, .jumbo-font.jumbo-text h3, .jumbo-font.services-title h3, .about-section .about-text-container .jumbo-font.about-title h3, .contact-section .contact-container .jumbo-font.contact-title h3 {
     margin-top: 40px; }
     @media screen and (max-width: 480px) {
@@ -1457,6 +1511,12 @@ header {
   -ms-flex-align: center;
   align-items: center;
   z-index: 3; }
+  @media screen and (max-width: 1200px) {
+    .scrollUp-bar {
+      top: 90px; } }
+  @media screen and (max-width: 760px) {
+    .scrollUp-bar {
+      top: 70px; } }
   @media screen and (max-width: 480px) {
     .scrollUp-bar {
       top: 0px;
@@ -1492,6 +1552,12 @@ footer {
   position: relative;
   top: 165px;
   height: 50px; }
+  @media screen and (max-width: 760px) {
+    footer {
+      top: 70px; } }
+  @media screen and (max-width: 1200px) {
+    footer {
+      top: 90px; } }
   @media screen and (max-width: 480px) {
     footer {
       top: 0px;
@@ -1504,6 +1570,9 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 980px; }
+    @media screen and (max-width: 760px) {
+      footer .footer-content {
+        width: 90%; } }
     @media screen and (max-width: 480px) {
       footer .footer-content {
         display: -ms-flexbox;

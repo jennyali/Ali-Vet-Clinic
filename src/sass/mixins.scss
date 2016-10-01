@@ -60,7 +60,7 @@
                 @include mediaQ($small-screen){
                     @include padding-and-margin( 10px 19px, null);
                     font-size: $ml-font;
-                    align-self: center;
+                    //align-self: center;
                     width: 80%;    
                 }
     }
@@ -89,6 +89,11 @@
     background-color: white;
     width: 37%;
 
+        @include mediaQ($large-screen){
+            display: none;
+
+        }
+
         @include mediaQ($medium-screen){
             display:none;
         }
@@ -109,12 +114,12 @@
     z-index: 3;
 
         @include mediaQ($large-screen){
-            width: 50%;
+            width: 100%;
             min-width: 400px;
         }
 
         @include mediaQ($small-screen){
-            width: 360px;
+            width: 200px;
         }
         
     h3{
@@ -139,8 +144,12 @@
 .section-title.jumbo-font{
     width: 280px;
 
+        @include mediaQ($large-screen){
+            width: 300px;
+        }
+
         @include mediaQ($small-screen){
-            width: 360px;
+            width: 320px;
         }
 
         h3{
